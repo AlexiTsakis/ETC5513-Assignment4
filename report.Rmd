@@ -59,7 +59,11 @@ knitr::opts_chunk$set(fig.pos = 'H', echo = FALSE, message = FALSE, warning = FA
 
 ```{r}
 Seatbelts_data = data.frame(as.matrix(Seatbelts),date=time(Seatbelts))
-data()
+
+ggplot(data=Seatbelts_data, aes(x=date,y=DriversKilled,col=law))+geom_line()
+ggplot(data=Seatbelts_data, aes(x=date,y=front,col=law))+geom_line()
+ggplot(data=Seatbelts_data, aes(x=date,y=rear,col=law))+geom_line()
+
 ```
 
 {Section 2}

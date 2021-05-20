@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.5.8)  20 MAY 2021 19:32
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.5.20)  20 MAY 2021 19:36
  restricted system commands enabled.
 **report.tex
 (./report.tex
@@ -42,7 +42,7 @@ Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
-. L3 programming layer <2021-05-07> (c:/Users/61477/AppData/Roaming/TinyTeX/tex
+. L3 programming layer <2021-05-11> (c:/Users/61477/AppData/Roaming/TinyTeX/tex
 mf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size11.clo
@@ -192,7 +192,7 @@ Already applied: [0000/00/00] Old fixltx2e package on input line 53.
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unico
 de-math.sty
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2021-05-07 L3 programming layer (loader) 
+Package: expl3 2021-05-11 L3 programming layer (loader) 
 
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backen
 d-luatex.def
@@ -1338,9 +1338,9 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 )
 \@quotelevel=\count449
 \@quotereset=\count450
-No file report.aux.
-
+(./report.aux)
 \openout1 = report.aux
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 303.
 LaTeX Font Info:    ... okay on input line 303.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 303.
@@ -1670,6 +1670,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 303.
 LaTeX Info: Redefining \pageref on input line 303.
 LaTeX Info: Redefining \nameref on input line 303.
+(./report.out) (./report.out)
 \@outlinefile=\write4
 
 \openout4 = report.out
@@ -1722,7 +1723,7 @@ Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2021-05-07 L3 programming layer (loader) 
+(biblatex)             2021-05-11 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
@@ -1733,8 +1734,8 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 \openout3 = report.bcf
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'report.bbl' not found.
-No file report.bbl.
+Package biblatex Info: ... file 'report.bbl' found.
+(./report.bbl)
 Package biblatex Info: Reference section=0 on input line 303.
 Package biblatex Info: Reference segment=0 on input line 303.
 
@@ -1762,25 +1763,253 @@ ction with package mdbch, on input line 303.
 Package mathdesign/mdbch Warning: Package 'amsfonts' shouldn't be used in conjo
 nction with package mdbch, on input line 303.
 
+<Figures/logo.jpg, id=4, 4015.0pt x 6022.5pt>
+File: Figures/logo.jpg Graphic file (type jpg)
+<use Figures/logo.jpg>
+Package luatex.def Info: Figures/logo.jpg  used on input line 304.
+(luatex.def)             Requested size: 170.68118pt x 256.02179pt.
+LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
+(Font)              scaled to size 9.24173pt on input line 304.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `fvs' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
+(Font)              scaled to size 10.12793pt on input line 304.
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 10.12793pt on input line 304.
+LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
+(Font)              scaled to size 8.43994pt on input line 304.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 9.60007pt on input line 304.
 
-! LaTeX Error: File `Figures/logo' not found.
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OML/mdbch/m/it/10'. Switching off
+(microtype)                protrusion for this font on input line 304.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.304 \titlepage
-              
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 6.72005pt on input line 304.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 4.80003pt on input line 304.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 9.60007pt on input line 304.
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OMS/mdbch/m/n/10'. Switching off
+(microtype)                protrusion for this font on input line 304.
+
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 6.72005pt on input line 304.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 4.80003pt on input line 304.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 9.60007pt on input line 304.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 6.72005pt on input line 304.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 4.80003pt on input line 304.
+
+(c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.c
+fg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+(c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.c
+fg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 9.60007pt on input line 304.
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OML/mdbch/m/n/10'. Switching off
+(microtype)                protrusion for this font on input line 304.
+
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 6.72005pt on input line 304.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 4.80003pt on input line 304.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 9.60007pt on input line 304.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 6.72005pt on input line 304.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 4.80003pt on input line 304.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 9.60007pt on input line 304.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 6.72005pt on input line 304.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 4.80003pt on input line 304.
+LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
+(Font)              scaled to size 9.60007pt on input line 304.
+LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
+(Font)              scaled to size 6.72005pt on input line 304.
+LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
+(Font)              scaled to size 4.80003pt on input line 304.
+LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
+(Font)              scaled to size 9.60007pt on input line 304.
+LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
+(Font)              scaled to size 6.72005pt on input line 304.
+LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
+(Font)              scaled to size 4.80003pt on input line 304.
+LaTeX Font Info:    Font shape `OMS/mdbch/b/n' will be
+(Font)              scaled to size 9.60007pt on input line 304.
+LaTeX Font Info:    Font shape `OMS/mdbch/b/n' will be
+(Font)              scaled to size 6.72005pt on input line 304.
+LaTeX Font Info:    Font shape `OMS/mdbch/b/n' will be
+(Font)              scaled to size 4.80003pt on input line 304.
+LaTeX Font Info:    Font shape `OMX/mdbch/b/n' will be
+(Font)              scaled to size 9.60007pt on input line 304.
+LaTeX Font Info:    Font shape `OMX/mdbch/b/n' will be
+(Font)              scaled to size 6.72005pt on input line 304.
+LaTeX Font Info:    Font shape `OMX/mdbch/b/n' will be
+(Font)              scaled to size 4.80003pt on input line 304.
+LaTeX Font Info:    Font shape `TU/FontAwesome(0)/m/n' will be
+(Font)              scaled to size 10.77621pt on input line 304.
+
+(c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-FontA
+wesome.cfg
+File: mt-FontAwesome.cfg 2021/02/22 v1.0 microtype config. file: Font Awesome (
+RS)
+)
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OML/mdbch/m/it/10.95'. Switching off
+(microtype)                protrusion for this font on input line 304.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OMS/mdbch/m/n/10.95'. Switching off
+(microtype)                protrusion for this font on input line 304.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `OML/mdbch/m/n/10.95'. Switching off
+(microtype)                protrusion for this font on input line 304.
+
+LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
+(Font)              scaled to size 23.88496pt on input line 304.
+LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
+(Font)              scaled to size 20.99857pt on input line 304.
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 20.99857pt on input line 304.
+LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
+(Font)              scaled to size 11.52008pt on input line 304.
+LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
+(Font)              scaled to size 12.1535pt on input line 304.
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 12.1535pt on input line 304.
+LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
+(Font)              scaled to size 13.82408pt on input line 304.
+
+Overfull \hbox (172.68228pt too wide) detected at line 304
+[] 
+ []
+
+
+Overfull \hbox (56.23262pt too wide) detected at line 304
+ [] |  [] []
+ []
+
+[1
+
+{c:/Users/61477/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex
+.map}<./Figures/logo.jpg>]
+<report_files/figure-latex/DriversKilled-1.pdf, id=13, 578.16pt x 361.35pt>
+File: report_files/figure-latex/DriversKilled-1.pdf Graphic file (type pdf)
+<use report_files/figure-latex/DriversKilled-1.pdf>
+Package luatex.def Info: report_files/figure-latex/DriversKilled-1.pdf  used on
+ input line 312.
+(luatex.def)             Requested size: 455.24165pt x 284.52603pt.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 10.51207pt on input line 313.
+LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
+(Font)              scaled to size 10.51207pt on input line 313.
+<report_files/figure-latex/FrontKilled-1.pdf, id=14, 578.16pt x 361.35pt>
+File: report_files/figure-latex/FrontKilled-1.pdf Graphic file (type pdf)
+<use report_files/figure-latex/FrontKilled-1.pdf>
+Package luatex.def Info: report_files/figure-latex/FrontKilled-1.pdf  used on i
+nput line 318.
+(luatex.def)             Requested size: 455.24165pt x 284.52603pt.
+<report_files/figure-latex/RearKilled-1.pdf, id=15, 578.16pt x 361.35pt>
+File: report_files/figure-latex/RearKilled-1.pdf Graphic file (type pdf)
+<use report_files/figure-latex/RearKilled-1.pdf>
+Package luatex.def Info: report_files/figure-latex/RearKilled-1.pdf  used on in
+put line 324.
+(luatex.def)             Requested size: 455.24165pt x 284.52603pt.
+<report_files/figure-latex/VanKilled-1.pdf, id=16, 578.16pt x 361.35pt>
+File: report_files/figure-latex/VanKilled-1.pdf Graphic file (type pdf)
+<use report_files/figure-latex/VanKilled-1.pdf>
+Package luatex.def Info: report_files/figure-latex/VanKilled-1.pdf  used on inp
+ut line 330.
+(luatex.def)             Requested size: 455.24165pt x 284.52603pt.
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.24173pt on input line 334.
+[2<./report_files/figure-latex/DriversKilled-1.pdf>] [3<./report_files/figure-la
+tex/FrontKilled-1.pdf><./report_files/figure-latex/RearKilled-1.pdf>] [4<./repor
+t_files/figure-latex/VanKilled-1.pdf>]
+
+LaTeX Warning: Reference `tab:DriverTable' on page 5 undefined on input line 38
+0.
+
+
+LaTeX Warning: Reference `tab:RearTable' on page 5 undefined on input line 380.
+
+
+
+LaTeX Warning: Reference `tab:FrontTable' on page 5 undefined on input line 380
+.
+
+
+LaTeX Warning: Reference `tab:VanTable' on page 5 undefined on input line 380.
+
+
+LaTeX Warning: Empty bibliography on input line 386.
+
+
+Package caption Warning: Unused \captionsetup[table] on input line 70.
+See the caption package documentation for explanation.
+
+[5] (./report.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package logreq Info: Writing requests to 'report.run.xml'.
+
+\openout1 = report.run.xml
+)
 
 Here is how much of LuaTeX's memory you used:
- 32483 strings out of 478388
+ 32884 strings out of 478378
  100000,1648299 words of node,token memory allocated
- 828 words of node memory still in use:
-   8 hlist, 1 vlist, 5 rule, 2 local_par, 5 dir, 9 glue, 4 kern, 2 penalty, 1 gl
-yph, 13 attribute, 84 glue_spec, 13 attribute_list, 6 temp, 2 if_stack, 1 write,
- 1 pdf_dest, 1 pdf_colorstack nodes
-   avail lists: 1:1,2:8,3:1,4:3,8:1,11:1
- 51232 multiletter control sequences out of 65536+600000
- 117 fonts using 8331155 bytes
- 85i,5n,135p,738b,807s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 622 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 5 kern, 1 glyph, 8 attribute, 77 glue_spec,
+ 8 attribute_list, 1 write nodes
+   avail lists: 1:1,2:422,3:504,4:67,5:80,6:58,7:3630,8:12,9:290,10:9,11:226
+ 51458 multiletter control sequences out of 65536+600000
+ 230 fonts using 13812559 bytes
+ 85i,14n,135p,738b,807s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{
+c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/ly1/texnansi.e
+nc}<c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype/public/font
+awesome/FontAwesome.otf><c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts
+/type1/bitstrea/charter/bchb8a.pfb><c:/Users/61477/AppData/Roaming/TinyTeX/texmf
+-dist/fonts/type1/bitstrea/charter/bchr8a.pfb><c:/Users/61477/AppData/Roaming/Ti
+nyTeX/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb><c:/Users/61477/AppDat
+a/Roaming/TinyTeX/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><c:/Users/61477/
+AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/bera/fvsb8a.pfb><c:/Users/
+61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/bera/fvsr8a.pfb><c:/
+Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/mathdesign/mdb
+ch/md-chr8t.pfb>
+Output written on report.pdf (5 pages, 7538481 bytes).
+
+PDF statistics: 112 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+

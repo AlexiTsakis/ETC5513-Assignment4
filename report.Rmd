@@ -1,5 +1,5 @@
 ---
-title: "Assignment 3 ggplot2"
+title: "Assignment 4 ggplot2"
 author:
 - familyname: Li
   othernames: Siyi
@@ -80,25 +80,29 @@ ggplot(data=Seatbelts_data, aes(x=date,y=VanKilled,col=law))+geom_line()+geom_sm
 ```{r DriverTable, echo = FALSE, message = FALSE, warning = FALSE}
 Seatbelts_data %>%
   group_by(law) %>%
-  summarise(DriversKilled_Average=mean(DriversKilled)) 
+  summarise(DriversKilled_Average=mean(DriversKilled)) %>%
+  kable()
 ```
 
 ```{r RearTable, echo = FALSE, message = FALSE, warning = FALSE}
 Seatbelts_data %>%
   group_by(law) %>%
-  summarise(Rear_Average=mean(rear)) 
+  summarise(Rear_Average=mean(rear)) %>%
+  kable()
 ```
 
 ```{r FrontTable, echo = FALSE, message = FALSE, warning = FALSE}
 Seatbelts_data %>%
   group_by(law) %>%
-  summarise(Front_Average=mean(front)) 
+  summarise(Front_Average=mean(front)) %>%
+  kable()
 ```
 
 ```{r VanTable, echo = FALSE, message = FALSE, warning = FALSE}
 Seatbelts_data %>%
   group_by(law) %>%
-  summarise(Van_Average=mean(VanKilled)) 
+  summarise(Van_Average=mean(VanKilled)) %>%
+  kable()
 ```
 
 In this section we look at the effect of seatbelts on driver deaths in the UK. Front seatbelts were compulsory on all new cars registered in the UK from 1968, however it was not required for them to be worn until 1983. In this section, we will answer the question - did mandatory wearing of frontrow seatbelts prevent deaths for drivers and passengers?

@@ -107,6 +107,16 @@ First, to answer if any relationships shown are causation and not simply correla
 
 These scenarios are referred to as "secondary collisions" - i.e. a crash event that results from the impact of an initial collison, such as ejection from a vehicle, or even a high speed impact with objects inside the vehicle.
 
+Now that we understand the theory behind the impact of seatbelts on preventing death, let us look at the data:
+
+There is a clear negative correlation between frontrow passengers and light good vehicle drivers killed since the introduction of the law (figure \@ref(fig:FrontKilled),  figure \@ref(fig:VanKilled)), data from the introduction of the law shown in blue).
+
+There is also a clear reduction in number of drivers killed (figure \@ref(fig:DriversKilled)) since the introduction of compulsory seatbelts - the lack of change since the introduction of the law, but the large change since approximately 1973 can be described as " drivers that are least likely to use seat belts might be those that are more likely to be involved in an accident" (Cohen, A. and Einav. L 2003) - i.e. that careful drivers adopted seatbelts already without the law, and those likely to get involved in accidents would be unlikely to wear seatbelts even with the law in place.
+
+There is little change in number of rear seat passengers killed (figure \@ref(fig:RearKilled)) - this is because the regulations and law were only for front seat seatbelts, and not backseat seatbelts, suggesting the total number of accidents didn't change.
+
+We can also see this in tabular format, so it is easier to see the effect of the law numerically (table \@ref(tab:DriverTable), table \@ref(tab:RearTable), table \@ref(tab:FrontTable), table \@ref(tab:VanTable))
+
 {Section 2}
 
 {Section 3}

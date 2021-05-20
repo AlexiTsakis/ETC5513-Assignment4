@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.5.20)  20 MAY 2021 19:36
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.5.20)  20 MAY 2021 19:41
  restricted system commands enabled.
 **report.tex
 (./report.tex
@@ -1943,39 +1943,15 @@ File: report_files/figure-latex/VanKilled-1.pdf Graphic file (type pdf)
 Package luatex.def Info: report_files/figure-latex/VanKilled-1.pdf  used on inp
 ut line 330.
 (luatex.def)             Requested size: 455.24165pt x 284.52603pt.
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.24173pt on input line 334.
 [2<./report_files/figure-latex/DriversKilled-1.pdf>] [3<./report_files/figure-la
 tex/FrontKilled-1.pdf><./report_files/figure-latex/RearKilled-1.pdf>] [4<./repor
 t_files/figure-latex/VanKilled-1.pdf>]
 
-LaTeX Warning: Reference `tab:DriverTable' on page 5 undefined on input line 38
-0.
-
-
-LaTeX Warning: Reference `tab:RearTable' on page 5 undefined on input line 380.
-
-
-
-LaTeX Warning: Reference `tab:FrontTable' on page 5 undefined on input line 380
-.
-
-
-LaTeX Warning: Reference `tab:VanTable' on page 5 undefined on input line 380.
-
-
-LaTeX Warning: Empty bibliography on input line 386.
-
-
-Package caption Warning: Unused \captionsetup[table] on input line 70.
-See the caption package documentation for explanation.
+LaTeX Warning: Empty bibliography on input line 414.
 
 [5] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1985,31 +1961,30 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32884 strings out of 478378
+ 32879 strings out of 478378
  100000,1648299 words of node,token memory allocated
- 622 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 5 kern, 1 glyph, 8 attribute, 77 glue_spec,
- 8 attribute_list, 1 write nodes
-   avail lists: 1:1,2:422,3:504,4:67,5:80,6:58,7:3630,8:12,9:290,10:9,11:226
- 51458 multiletter control sequences out of 65536+600000
- 230 fonts using 13812559 bytes
+ 694 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 13 kern, 1 glyph, 16 attribute, 77 glue_spe
+c, 16 attribute_list, 1 write nodes
+   avail lists: 1:1,2:690,3:203,4:77,5:96,6:54,7:3187,8:21,9:470,10:9,11:183
+ 51455 multiletter control sequences out of 65536+600000
+ 228 fonts using 13698839 bytes
  85i,14n,135p,738b,807s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{
-c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/ly1/texnansi.e
+{c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/ly1/texnansi.
+enc}{c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.e
 nc}<c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype/public/font
 awesome/FontAwesome.otf><c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts
 /type1/bitstrea/charter/bchb8a.pfb><c:/Users/61477/AppData/Roaming/TinyTeX/texmf
 -dist/fonts/type1/bitstrea/charter/bchr8a.pfb><c:/Users/61477/AppData/Roaming/Ti
 nyTeX/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb><c:/Users/61477/AppDat
-a/Roaming/TinyTeX/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><c:/Users/61477/
-AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/bera/fvsb8a.pfb><c:/Users/
-61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/bera/fvsr8a.pfb><c:/
-Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/mathdesign/mdb
-ch/md-chr8t.pfb>
-Output written on report.pdf (5 pages, 7538481 bytes).
+a/Roaming/TinyTeX/texmf-dist/fonts/type1/public/bera/fvsb8a.pfb><c:/Users/61477/
+AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/bera/fvsr8a.pfb><c:/Users/
+61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-
+chr8t.pfb>
+Output written on report.pdf (5 pages, 7535066 bytes).
 
-PDF statistics: 112 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 131072)
+PDF statistics: 116 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

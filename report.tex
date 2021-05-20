@@ -21,7 +21,7 @@
 \PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
 \usepackage[unicode=true]{hyperref}
 \hypersetup{
-            pdftitle={Assignment 3 ggplot2},
+            pdftitle={Assignment 4 ggplot2},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
@@ -58,7 +58,7 @@
 \makeatother
 
 
-\title{Assignment 3 ggplot2}
+\title{Assignment 4 ggplot2}
 
 %% MONASH STUFF
 
@@ -331,37 +331,65 @@
 \caption{\label{fig:VanKilled}Light goods vehicle drivers killed in accidents over time}
 \end{figure}
 
-\begin{verbatim}
-## # A tibble: 2 x 2
-##     law DriversKilled_Average
-##   <dbl>                 <dbl>
-## 1     0                  126.
-## 2     1                  100.
-\end{verbatim}
+\begin{table}
 
-\begin{verbatim}
-## # A tibble: 2 x 2
-##     law Rear_Average
-##   <dbl>        <dbl>
-## 1     0         400.
-## 2     1         408.
-\end{verbatim}
+\caption{\label{tab:DriverTable}Drivers killed before and after law}
+\centering
+\begin{tabular}[t]{r|r}
+\hline
+law & DriversKilled\_Average\\
+\hline
+0 & 125.8698\\
+\hline
+1 & 100.2609\\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{verbatim}
-## # A tibble: 2 x 2
-##     law Front_Average
-##   <dbl>         <dbl>
-## 1     0          873.
-## 2     1          571.
-\end{verbatim}
+\begin{table}
 
-\begin{verbatim}
-## # A tibble: 2 x 2
-##     law Van_Average
-##   <dbl>       <dbl>
-## 1     0        9.59
-## 2     1        5.17
-\end{verbatim}
+\caption{\label{tab:RearTable}Back seat passengers killed before and after law}
+\centering
+\begin{tabular}[t]{r|r}
+\hline
+law & Rear\_Average\\
+\hline
+0 & 400.3195\\
+\hline
+1 & 407.7391\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}
+
+\caption{\label{tab:FrontTable}Front seat passengers killed before and after law}
+\centering
+\begin{tabular}[t]{r|r}
+\hline
+law & Front\_Average\\
+\hline
+0 & 873.4556\\
+\hline
+1 & 570.9565\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}
+
+\caption{\label{tab:VanTable}Light good vehicle drivers killed before and after law}
+\centering
+\begin{tabular}[t]{r|r}
+\hline
+law & Van\_Average\\
+\hline
+0 & 9.585799\\
+\hline
+1 & 5.173913\\
+\hline
+\end{tabular}
+\end{table}
 
 In this section we look at the effect of seatbelts on driver deaths in the UK. Front seatbelts were compulsory on all new cars registered in the UK from 1968, however it was not required for them to be worn until 1983. In this section, we will answer the question - did mandatory wearing of frontrow seatbelts prevent deaths for drivers and passengers?
 

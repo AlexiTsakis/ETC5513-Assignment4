@@ -60,11 +60,29 @@ knitr::opts_chunk$set(fig.pos = 'H', echo = FALSE, message = FALSE, warning = FA
 ```{r}
 Seatbelts_data = data.frame(as.matrix(Seatbelts),date=time(Seatbelts))
 
-ggplot(data=Seatbelts_data, aes(x=date,y=DriversKilled,col=law))+geom_line()
-ggplot(data=Seatbelts_data, aes(x=date,y=front,col=law))+geom_line()
-ggplot(data=Seatbelts_data, aes(x=date,y=rear,col=law))+geom_line()
+ggplot(data=Seatbelts_data, aes(x=date,y=DriversKilled,col=law))+geom_line()+geom_smooth()
+ggplot(data=Seatbelts_data, aes(x=date,y=front,col=law))+geom_line()+geom_smooth()
+ggplot(data=Seatbelts_data, aes(x=date,y=rear,col=law))+geom_line()+geom_smooth()
+ggplot(data=Seatbelts_data, aes(x=date,y=VanKilled,col=law))+geom_line()+geom_smooth()
 
+Seatbelts_data %>%
+  group_by(law) %>%
+  summarise(n=mean(DriversKilled)) 
+
+Seatbelts_data %>%
+  group_by(law) %>%
+  summarise(n=mean(rear)) 
+
+Seatbelts_data %>%
+  group_by(law) %>%
+  summarise(n=mean(front)) 
+
+Seatbelts_data %>%
+  group_by(law) %>%
+  summarise(n=mean(VanKilled)) 
 ```
+
+
 
 {Section 2}
 

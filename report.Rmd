@@ -55,6 +55,13 @@ knitr::opts_chunk$set(fig.pos = 'H', echo = FALSE, message = FALSE, warning = FA
 
 {Section 1}
 
+####Compulsory Seatbelts 1983
+
+```{r}
+Seatbelts_data = data.frame(as.matrix(Seatbelts),date=time(Seatbelts))
+data()
+```
+
 {Section 2}
 
 {Section 3}

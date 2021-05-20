@@ -57,29 +57,48 @@ knitr::opts_chunk$set(fig.pos = 'H', echo = FALSE, message = FALSE, warning = FA
 
 ####Compulsory Seatbelts 1983
 
-```{r}
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
 Seatbelts_data = data.frame(as.matrix(Seatbelts),date=time(Seatbelts))
+```
 
+```{r DriversKilled, fig.cap = "Drivers killed in accidents over time", echo = FALSE, message = FALSE, warning = FALSE}
 ggplot(data=Seatbelts_data, aes(x=date,y=DriversKilled,col=law))+geom_line()+geom_smooth()
+```
+
+```{r FrontKilled, fig.cap = "Frontseat passengers killed in accidents over time", echo = FALSE, message = FALSE, warning = FALSE}
 ggplot(data=Seatbelts_data, aes(x=date,y=front,col=law))+geom_line()+geom_smooth()
+```
+
+```{r RearKilled, fig.cap = "Backseat passengers killed in accidents over time", echo = FALSE, message = FALSE, warning = FALSE}
 ggplot(data=Seatbelts_data, aes(x=date,y=rear,col=law))+geom_line()+geom_smooth()
+```
+
+```{r VanKilled, fig.cap = "Light goods vehicle drivers killed in accidents over time", echo = FALSE, message = FALSE, warning = FALSE}
 ggplot(data=Seatbelts_data, aes(x=date,y=VanKilled,col=law))+geom_line()+geom_smooth()
+```
 
+```{r DriverTable, echo = FALSE, message = FALSE, warning = FALSE}
 Seatbelts_data %>%
   group_by(law) %>%
-  summarise(n=mean(DriversKilled)) 
+  summarise(DriversKilled_Average=mean(DriversKilled)) 
+```
 
+```{r RearTable, echo = FALSE, message = FALSE, warning = FALSE}
 Seatbelts_data %>%
   group_by(law) %>%
-  summarise(n=mean(rear)) 
+  summarise(Rear_Average=mean(rear)) 
+```
 
+```{r FrontTable, echo = FALSE, message = FALSE, warning = FALSE}
 Seatbelts_data %>%
   group_by(law) %>%
-  summarise(n=mean(front)) 
+  summarise(Front_Average=mean(front)) 
+```
 
+```{r VanTable, echo = FALSE, message = FALSE, warning = FALSE}
 Seatbelts_data %>%
   group_by(law) %>%
-  summarise(n=mean(VanKilled)) 
+  summarise(Van_Average=mean(VanKilled)) 
 ```
 
 

@@ -115,7 +115,7 @@ There is also a clear reduction in number of drivers killed (figure \@ref(fig:Dr
 
 There is little change in number of rear seat passengers killed (figure \@ref(fig:RearKilled)) - this is because the regulations and law were only for front seat seatbelts, and not backseat seatbelts, suggesting the total number of accidents didn't change.
 
-We can also see this in tabular format, so it is easier to see the effect of the law numerically (table \@ref(tab:DriverTable), table \@ref(tab:RearTable), table \@ref(tab:FrontTable), table \@ref(tab:VanTable))
+We can also see this in tabular format, so it is easier to see the effect of the law numerically (table \@ref(tab:DriverTable), table \@ref(tab:RearTable), table \@ref(tab:FrontTable), table \@ref(tab:VanTable)).
 
 {Section 2}
 

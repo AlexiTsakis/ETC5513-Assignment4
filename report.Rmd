@@ -59,7 +59,7 @@ knitr::opts_chunk$set(fig.pos = 'H', echo = FALSE, message = FALSE, warning = FA
 ####Compulsory Seatbelts 1983
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
-Seatbelts_data = data.frame(as.matrix(Seatbelts),date=time(Seatbelts))
+Seatbelts_data = data.frame(as.matrix(Seatbelts), date=time(Seatbelts))
 ```
 
 ```{r DriversKilled, fig.cap = "Drivers killed in accidents over time", echo = FALSE, message = FALSE, warning = FALSE}
@@ -127,7 +127,10 @@ We can also see this in tabular format, so it is easier to see the effect of the
 {Section 3}
 
 ```{r data}
-Seatbelts%>%as.data.frame() -> Seatbelts
+data(Seatbelts)
+Seatbelts <- data.frame(Year=floor(time(Seatbelts)),
+Month=factor(cycle(Seatbelts),
+labels=month.abb), Seatbelts)
 ```
 
 # Research Questions
@@ -137,12 +140,24 @@ Has the mandatory seat belt policy been statistically effective since 1983?
 # Data Analysis
 ## Analysis of trends in driverkilled before and after 1983
 
-```{r figure1, fig.cap="Line graph for driverkilled before 1983}
+```{r figure1, fig.cap="Line graph for people killed}
+selectdata <- Seatbelts %>% 
+  select(DriversKilled, drivers, front, rear, Year)
 
+ggplot(data = selectdata) +
+  geom_smooth(mapping = aes(x = Year, y = DriversKilled))->f1
 
+ggplot(data = selectdata) +
+  geom_smooth(mapping = aes(x = Year, y = drivers))->f2
+
+ggplot(data = selectdata) +
+  geom_smooth(mapping = aes(x = Year, y = front))->f3
+
+ggplot(data = selectdata) +
+  geom_smooth(mapping = aes(x = Year, y = rear))->f4
+
+library(gridExtra)
+grid.arrange(f1, f2, f3, f4)
 ```
 
-```{r figure2, fig.cap="Line graph for driverkilled after 1983}
-
-```
 

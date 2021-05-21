@@ -47,6 +47,7 @@ library(tidyverse)
 library(readr)
 library(kableExtra)
 library(bookdown)
+library(ggplot2)
 ```
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
@@ -124,3 +125,24 @@ We can also see this in tabular format, so it is easier to see the effect of the
 {Section 2}
 
 {Section 3}
+
+```{r data}
+Seatbelts%>%as.data.frame() -> Seatbelts
+```
+
+# Research Questions
+
+Has the mandatory seat belt policy been statistically effective since 1983?
+
+# Data Analysis
+## Analysis of trends in driverkilled before and after 1983
+
+```{r figure1, fig.cap="Line graph for driverkilled before 1983}
+
+
+```
+
+```{r figure2, fig.cap="Line graph for driverkilled after 1983}
+
+```
+

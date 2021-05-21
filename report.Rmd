@@ -135,6 +135,21 @@ Seatbelts%>%as.data.frame()->seatbelts
 # Reaseach Questions
 
 Is there any relationship between the DriversKilled variable and other variables?
+Can we build an model among these variables?
+
+
+# Analysis
+## Is there any relationship between the DriversKilled variable and other variables?
+```{r ggpairs, warning=FALSE, message=FALSE, fig.cap = "Correlation between variables"}
+seatbelts%>% 
+  ggpairs()+
+  ggtitle("Correlation between variables")
+```
+- I use the GGally package to produce the correlation graph 
+- The figure \@ref(fig:ggpairs) shows that there are positive relationships between drivers variable and Driverskilled variable, front variable and Driverskilled variable, rear variable and Driverskilled variable.
+- it also indicates that the relationships between kms and Driverskilled variable, PetrolPrice and Driverskilled , VanKilled and Driverskilled, and law and Driverskilled are negative.
+
+
 
 
 

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.10)  21 MAY 2021 16:10
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.21)  22 MAY 2021 14:03
  restricted system commands enabled.
 **report.tex
 (./report.tex
@@ -42,7 +42,7 @@ Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
-. L3 programming layer <2021-05-07> (/Users/Y.W/Library/TinyTeX/texmf-dist/tex/
+. L3 programming layer <2021-05-11> (/Users/Y.W/Library/TinyTeX/texmf-dist/tex/
 latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
 (/Users/Y.W/Library/TinyTeX/texmf-dist/tex/latex/base/size11.clo
@@ -174,7 +174,7 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 Already applied: [0000/00/00] Old fixltx2e package on input line 53.
 ) (/Users/Y.W/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.st
 y (/Users/Y.W/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2021-05-07 L3 programming layer (loader) 
+Package: expl3 2021-05-11 L3 programming layer (loader) 
 
 (/Users/Y.W/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
 File: l3backend-luatex.def 2021-05-07 L3 backend support: PDF output (LuaTeX)
@@ -1527,7 +1527,7 @@ Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2021-05-07 L3 programming layer (loader) 
+(biblatex)             2021-05-11 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 (/Users/Y.W/Library/TinyTeX/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
@@ -1770,10 +1770,16 @@ LaTeX Warning: Reference `tab:FrontTable' on page 5 undefined on input line 408
 
 LaTeX Warning: Reference `tab:VanTable' on page 5 undefined on input line 408.
 
+<report_files/figure-latex/figure1-1.pdf, id=73, 578.16pt x 361.35pt>
+File: report_files/figure-latex/figure1-1.pdf Graphic file (type pdf)
+<use report_files/figure-latex/figure1-1.pdf>
+Package luatex.def Info: report_files/figure-latex/figure1-1.pdf  used on input
+ line 425.
+(luatex.def)             Requested size: 455.24165pt x 284.52603pt.
 
-LaTeX Warning: Empty bibliography on input line 414.
+LaTeX Warning: Empty bibliography on input line 427.
 
-[5] (./report.aux)
+[5] [6<./report_files/figure-latex/figure1-1.pdf>] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1790,7 +1796,7 @@ Package rerunfilecheck Warning: File `report.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `report.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             After:  EE59DFC090F91F3B78C605132DEA9680;654.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                report
@@ -1802,13 +1808,13 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32859 strings out of 478388
+ 32887 strings out of 478378
  100000,1648299 words of node,token memory allocated
- 694 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 13 kern, 1 glyph, 16 attribute, 77 glue_spe
-c, 16 attribute_list, 1 write nodes
-   avail lists: 1:1,2:690,3:203,4:65,5:96,6:54,7:3187,8:13,9:470,10:9,11:183
- 51445 multiletter control sequences out of 65536+600000
+ 703 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 14 kern, 1 glyph, 17 attribute, 77 glue_spe
+c, 17 attribute_list, 1 write nodes
+   avail lists: 1:1,2:688,3:203,4:65,5:95,6:54,7:3187,8:14,9:470,10:9,11:194
+ 51470 multiletter control sequences out of 65536+600000
  228 fonts using 18862135 bytes
  85i,14n,135p,738b,807s stack positions out of 5000i,500n,10000p,200000b,80000s
 ! error:  (type 1): cannot find encoding file 'texnansi.enc' for reading

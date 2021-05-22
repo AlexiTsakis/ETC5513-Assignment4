@@ -135,29 +135,26 @@ labels=month.abb), Seatbelts)
 
 # Research Questions
 
-Has the mandatory seat belt policy been statistically effective since 1983?
+From the data on the number of driver deaths, which time period was the peak, and what historical facts accompany the change after the peak
 
 # Data Analysis
 ## Analysis of trends in driverkilled before and after 1983
 
-```{r figure1, fig.cap="Line graph for people killed}
+```{r figureE}
 selectdata <- Seatbelts %>% 
   select(DriversKilled, drivers, front, rear, Year)
 
 ggplot(data = selectdata) +
-  geom_smooth(mapping = aes(x = Year, y = DriversKilled))->f1
+  geom_smooth(mapping = aes(x = Year, y = DriversKilled)) +
+  ggtitle("DriversKilled Trend Line")->f1
 
 ggplot(data = selectdata) +
-  geom_smooth(mapping = aes(x = Year, y = drivers))->f2
-
-ggplot(data = selectdata) +
-  geom_smooth(mapping = aes(x = Year, y = front))->f3
-
-ggplot(data = selectdata) +
-  geom_smooth(mapping = aes(x = Year, y = rear))->f4
+  geom_smooth(mapping = aes(x = Year, y = drivers)) +
+  ggtitle("DriversDeath Trend Line")->f2
 
 library(gridExtra)
-grid.arrange(f1, f2, f3, f4)
+grid.arrange(f1, f2)
 ```
 
+According to Figure \@ref(fig:figureE), as we can see, the trend line after 1970 began to decline. The reason is Successive UK governments proposed, but failed to deliver, seat belt legislation throughout the 1970s. Front seat belts were compulsory equipment on all new cars registered in the UK from 1968, although it did not become compulsory for them to be worn until 1983. (\cite{richens2000condoms}) \clearpage
 

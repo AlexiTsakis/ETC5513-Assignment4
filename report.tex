@@ -297,7 +297,6 @@
 \usepackage{threeparttablex}
 \usepackage[normalem]{ulem}
 \usepackage{makecell}
-\usepackage{xcolor}
 
 
 \begin{document}
@@ -407,7 +406,79 @@ There is little change in number of rear seat passengers killed (figure \ref{fig
 
 We can also see this in tabular format, so it is easier to see the effect of the law numerically (table \ref{tab:DriverTable}, table \ref{tab:RearTable}, table \ref{tab:FrontTable}, table \ref{tab:VanTable}).
 
+\clearpage
+
 \{Section 2\}
+
+\hypertarget{reaseach-questions}{%
+\section{Reaseach Questions}\label{reaseach-questions}}
+
+\begin{itemize}
+\item
+  Is there any relationship between the DriversKilled variable and other variables?
+\item
+  Can we build an model among these variables?
+\end{itemize}
+
+\hypertarget{analysis}{%
+\section{Analysis}\label{analysis}}
+
+\hypertarget{is-there-any-relationship-between-the-driverskilled-variable-and-other-variables}{%
+\subsection{Is there any relationship between the DriversKilled variable and other variables?}\label{is-there-any-relationship-between-the-driverskilled-variable-and-other-variables}}
+
+\begin{table}
+
+\caption{\label{tab:mytables}Summary of the three variabls}
+\centering
+\begin{tabular}[t]{l|l|l|l}
+\hline
+  & DriversKilled &    drivers &     front\\
+\hline
+ & Min.   : 60.0 & Min.   :1057 & Min.   : 426.0\\
+\hline
+ & 1st Qu.:104.8 & 1st Qu.:1462 & 1st Qu.: 715.5\\
+\hline
+ & Median :118.5 & Median :1631 & Median : 828.5\\
+\hline
+ & Mean   :122.8 & Mean   :1670 & Mean   : 837.2\\
+\hline
+ & 3rd Qu.:138.0 & 3rd Qu.:1851 & 3rd Qu.: 950.8\\
+\hline
+ & Max.   :198.0 & Max.   :2654 & Max.   :1299.0\\
+\hline
+\end{tabular}
+\end{table}
+
+From the table \ref{tab:mytables} shows:
+
+\begin{itemize}
+\item
+  the minimum number of drivers killed is 60 and the maximum is 198.
+\item
+  the minimum number of drivers is 1057 and the maximum is 2654.
+\item
+  the minimum number of front-seat passengers killed or seriously injured is 426 and the maximum is 1299.
+\item
+  when the number of the drivers increase, the number of the drivers killed also increase. Therefore, I guess there is a positive relationship between the variable drivers and the variable drivers killed.
+\end{itemize}
+
+In order to develop the relationship between the number of drivers and car drivers killed, we can use GGally package (\cite{10}) to produce the correlation graph.
+
+\begin{figure}[H]
+
+{\centering \includegraphics{report_files/figure-latex/myggpair-1} 
+
+}
+
+\caption{Correlation between variables}\label{fig:myggpair}
+\end{figure}
+
+\begin{itemize}
+\item
+  The figure \ref{fig:myggpair} shows that there are positive relationships between drivers variable and Driverskilled variable, front variable and Driverskilled variable, VanKilled and Driverskilled, rear variable and Driverskilled variable. Especially, we can see that the variables of front and drivers are highly positive related to the Driverskilled variable since the correlations between that are 0.707 and 0.889 respectively.
+\item
+  It also indicates that the relationships between kms and Driverskilled variable, PetrolPrice and Driverskilled, and law and Driverskilled are negative.
+\end{itemize}
 
 \{Section 3\}
 

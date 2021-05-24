@@ -121,7 +121,11 @@ There is little change in number of rear seat passengers killed (figure \@ref(fi
 
 We can also see this in tabular format, so it is easier to see the effect of the law numerically (table \@ref(tab:DriverTable), table \@ref(tab:RearTable), table \@ref(tab:FrontTable), table \@ref(tab:VanTable)).
 
+\clearpage
+
+
 {Section 2}
+
 ```{r, message=FALSE, warning=FALSE}
 library(ggplot2)
 library(GGally)
@@ -136,31 +140,41 @@ Seatbelts%>%as.data.frame()->seatbelts
 ```
 # Reaseach Questions
 
-Is there any relationship between the DriversKilled variable and other variables?
-Can we build an model among these variables?
+- Is there any relationship between the DriversKilled variable and other variables?
+
+- Can we build an model among these variables?
 
 
 # Analysis
 ## Is there any relationship between the DriversKilled variable and other variables?
-```{r mytables, message=FALSE, warning=FALSE}
+
+```{r mytables, message=FALSE, warning=FALSE, fig.align='center', fig.pos="H"}
 seatbelts%>%
-  summary%>%
-  kable(caption = "Summary of all variabls")%>%
-  kable_styling(bootstrap_options = c("striped", "hover"))
-
+  select("DriversKilled", "drivers", "front")%>%
+  summary()%>%
+  kable(caption = "Summary of the three variabls")
 ```
-From the table \@ref(tab:mytables) shows that the minimum number of drivers killed is 60 and the maximum is 198. It also presents that law is a binary variable. 
+From the table \@ref(tab:mytables) shows:
 
-```{r ggpairs, warning=FALSE, message=FALSE, fig.cap = "Correlation between variables"}
+- the minimum number of drivers killed is 60 and the maximum is 198. 
+
+- the minimum number of drivers is 1057 and the maximum is 2654. 
+
+- the minimum number of front-seat passengers killed or seriously injured is 426 and the maximum is 1299.
+
+- when the number of the drivers increase, the number of the drivers killed also increase. Therefore, I guess there is a positive relationship between the variable drivers and the variable drivers killed.
+ 
+In order to develop the relationship between the number of drivers and car drivers killed, we can use GGally package (\cite{10}) to produce the correlation graph.
+```{r myggpair, warning=FALSE, message=FALSE, fig.cap = "Correlation between variables", fig.align='center'}
 seatbelts%>% 
   ggpairs()+
-  ggtitle("Correlation between variables")
+  ggtitle("Correlation between variables")+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 ```
-- I use the GGally package (\cite{10}) to produce the correlation graph. 
-- The figure \@ref(fig:ggpairs) shows that there are positive relationships between drivers variable and Driverskilled variable, front variable and Driverskilled variable, rear variable and Driverskilled variable.
-- It also indicates that the relationships between kms and Driverskilled variable, PetrolPrice and Driverskilled , VanKilled and Driverskilled, and law and Driverskilled are negative.
 
+- The figure \@ref(fig:myggpair) shows that there are positive relationships between drivers variable and Driverskilled variable, front variable and Driverskilled variable, VanKilled and Driverskilled, rear variable and Driverskilled variable. Especially, we can see that the variables of front and drivers are highly positive related to the Driverskilled variable since the correlations between that are 0.707 and 0.889 respectively.
 
+- It also indicates that the relationships between kms and Driverskilled variable, PetrolPrice and Driverskilled, and law and Driverskilled are negative.
 
 
 

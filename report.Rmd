@@ -122,7 +122,7 @@ There is little change in number of rear seat passengers killed (figure \@ref(fi
 We can also see this in tabular format, so it is easier to see the effect of the law numerically (table \@ref(tab:DriverTable), table \@ref(tab:RearTable), table \@ref(tab:FrontTable), table \@ref(tab:VanTable)).
 
 {Section 2}
-```{r}
+```{r, message=FALSE, warning=FALSE}
 library(ggplot2)
 library(GGally)
 ```
@@ -140,6 +140,15 @@ Can we build an model among these variables?
 
 # Analysis
 ## Is there any relationship between the DriversKilled variable and other variables?
+```{r mytables, message=FALSE, warning=FALSE}
+seatbelts%>%
+  summary%>%
+  kable(caption = "summary of all variabls")%>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+```
+From the table \@ref(tab:mytables) shows that the minimum number of drivers killed is 60 and the maximum is 198. It also presents that law is a binary variable. 
+
 ```{r ggpairs, warning=FALSE, message=FALSE, fig.cap = "Correlation between variables"}
 seatbelts%>% 
   ggpairs()+

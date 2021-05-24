@@ -125,6 +125,8 @@ We can also see this in tabular format, so it is easier to see the effect of the
 ```{r, message=FALSE, warning=FALSE}
 library(ggplot2)
 library(GGally)
+library(tidyverse)
+library(readr)
 ```
 
 
@@ -143,7 +145,7 @@ Can we build an model among these variables?
 ```{r mytables, message=FALSE, warning=FALSE}
 seatbelts%>%
   summary%>%
-  kable(caption = "summary of all variabls")%>%
+  kable(caption = "Summary of all variabls")%>%
   kable_styling(bootstrap_options = c("striped", "hover"))
 
 ```
@@ -154,9 +156,9 @@ seatbelts%>%
   ggpairs()+
   ggtitle("Correlation between variables")
 ```
-- I use the GGally package to produce the correlation graph 
+- I use the GGally package (\cite{10}) to produce the correlation graph. 
 - The figure \@ref(fig:ggpairs) shows that there are positive relationships between drivers variable and Driverskilled variable, front variable and Driverskilled variable, rear variable and Driverskilled variable.
-- it also indicates that the relationships between kms and Driverskilled variable, PetrolPrice and Driverskilled , VanKilled and Driverskilled, and law and Driverskilled are negative.
+- It also indicates that the relationships between kms and Driverskilled variable, PetrolPrice and Driverskilled , VanKilled and Driverskilled, and law and Driverskilled are negative.
 
 
 

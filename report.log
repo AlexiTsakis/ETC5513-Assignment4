@@ -1,24 +1,20 @@
-<<<<<<< HEAD
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.2)  24 MAY 2021 22:48
-=======
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.2)  25 MAY 2021 11:25
->>>>>>> siyili
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.25)  25 MAY 2021 11:58
  restricted system commands enabled.
 **report.tex
 (./report.tex
 LaTeX2e <2020-10-01> patch level 4
-Lua module: luaotfload 2021-01-08 3.17 Lua based OpenType font support
-Lua module: lualibs 2020-12-30 2.73 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2020-12-30 2.73 ConTeXt Lua libraries -- extended c
+Lua module: luaotfload 2021-05-21 3.18 Lua based OpenType font support
+Lua module: lualibs 2021-05-20 2.74 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2021-05-20 2.74 ConTeXt Lua libraries -- extended c
 ollection.
 luaotfload | conf : Root cache directory is "/Users/fortyoneli/Library/TinyTeX/t
 exmf-var/luatex-cache/generic/names".
-luaotfload | init : Loading fontloader "fontloader-2021-01-07.lua" from kpse-res
+luaotfload | init : Loading fontloader "fontloader-2021-05-20.lua" from kpse-res
 olved path "/Users/fortyoneli/Library/TinyTeX/texmf-dist/tex/luatex/luaotfload/f
-ontloader-2021-01-07.lua".
+ontloader-2021-05-20.lua".
 Lua-only attribute luaotfload@noligature = 1
 Lua-only attribute luaotfload@syllabe = 2
-luaotfload | init : Context OpenType loader version 0x1.8e76c8b439581p+1
+luaotfload | init : Context OpenType loader version 3.116
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' at position 1 in `glyph_stream_provider'.
@@ -34,6 +30,7 @@ Inserting `luaotfload.harf.finalize_hlist' at position 2 in `hpack_filter'.
 Inserting `luaotfload.cleanup_files' at position 1 in `wrapup_run'.
 Inserting `luaotfload.harf.finalize_unicode' at position 1 in `finish_pdffile'.
 Inserting `luaotfload.glyphinfo' at position 1 in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 4
 Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
 font'.
 Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_fon
@@ -46,7 +43,7 @@ Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
-. L3 programming layer <2021-02-18> (/Users/fortyoneli/Library/TinyTeX/texmf-di
+. L3 programming layer <2021-05-11> (/Users/fortyoneli/Library/TinyTeX/texmf-di
 st/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
 (/Users/fortyoneli/Library/TinyTeX/texmf-dist/tex/latex/base/size11.clo
@@ -180,11 +177,11 @@ Already applied: [0000/00/00] Old fixltx2e package on input line 53.
 (/Users/fortyoneli/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-ma
 th.sty (/Users/fortyoneli/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.s
 ty
-Package: expl3 2021-02-18 L3 programming layer (loader) 
+Package: expl3 2021-05-11 L3 programming layer (loader) 
 
 (/Users/fortyoneli/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-lua
 tex.def
-File: l3backend-luatex.def 2021-03-18 L3 backend support: PDF output (LuaTeX)
+File: l3backend-luatex.def 2021-05-07 L3 backend support: PDF output (LuaTeX)
 \l__color_backend_stack_int=\count195
 \l__pdf_internal_box=\box49
 ))
@@ -203,7 +200,7 @@ e-2020-10-01.sty
 e-generic.tex)))
 (/Users/fortyoneli/Library/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3k
 eys2e.sty
-Package: l3keys2e 2021-03-12 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2021-05-07 LaTeX2e option processing using LaTeX3 keys
 ) (/Users/fortyoneli/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
 Lua module: fontspec 2020/02/21 2.7i Font selection for XeLaTeX and LuaLaTeX
@@ -1543,7 +1540,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 302.
 LaTeX Info: Redefining \pageref on input line 302.
 LaTeX Info: Redefining \nameref on input line 302.
-(./report.out) (./report.out)
 \@outlinefile=\write4
 
 \openout4 = report.out
@@ -1596,7 +1592,7 @@ Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2021-02-18 L3 programming layer (loader) 
+(biblatex)             2021-05-11 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
@@ -1607,8 +1603,8 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 \openout3 = report.bcf
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'report.bbl' found.
-(./report.bbl)
+Package biblatex Info: ... file 'report.bbl' not found.
+No file report.bbl.
 Package biblatex Info: Reference section=0 on input line 302.
 Package biblatex Info: Reference segment=0 on input line 302.
 
@@ -1636,11 +1632,7 @@ ction with package mdbch, on input line 302.
 Package mathdesign/mdbch Warning: Package 'amsfonts' shouldn't be used in conjo
 nction with package mdbch, on input line 302.
 
-<<<<<<< HEAD
-<Figures/logo.jpg, id=16, 4015.0pt x 6022.5pt>
-=======
-<Figures/logo.jpg, id=8, 4015.0pt x 6022.5pt>
->>>>>>> siyili
+<Figures/logo.jpg, id=4, 4015.0pt x 6022.5pt>
 File: Figures/logo.jpg Graphic file (type jpg)
 <use Figures/logo.jpg>
 Package luatex.def Info: Figures/logo.jpg  used on input line 303.
@@ -1788,11 +1780,7 @@ Overfull \hbox (56.23262pt too wide) detected at line 303
 
 {/Users/fortyoneli/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 <./Figures/logo.jpg>]
-<<<<<<< HEAD
-<report_files/figure-latex/DriversKilled-1.pdf, id=25, 562.1pt x 349.305pt>
-=======
-<report_files/figure-latex/DriversKilled-1.pdf, id=17, 562.1pt x 349.305pt>
->>>>>>> siyili
+<report_files/figure-latex/DriversKilled-1.pdf, id=13, 562.1pt x 349.305pt>
 File: report_files/figure-latex/DriversKilled-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/DriversKilled-1.pdf>
 Package luatex.def Info: report_files/figure-latex/DriversKilled-1.pdf  used on
@@ -1802,31 +1790,19 @@ LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 10.51207pt on input line 312.
 LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
 (Font)              scaled to size 10.51207pt on input line 312.
-<<<<<<< HEAD
-<report_files/figure-latex/FrontKilled-1.pdf, id=26, 562.1pt x 349.305pt>
-=======
-<report_files/figure-latex/FrontKilled-1.pdf, id=18, 562.1pt x 349.305pt>
->>>>>>> siyili
+<report_files/figure-latex/FrontKilled-1.pdf, id=14, 562.1pt x 349.305pt>
 File: report_files/figure-latex/FrontKilled-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/FrontKilled-1.pdf>
 Package luatex.def Info: report_files/figure-latex/FrontKilled-1.pdf  used on i
 nput line 317.
 (luatex.def)             Requested size: 455.24706pt x 282.90352pt.
-<<<<<<< HEAD
-<report_files/figure-latex/RearKilled-1.pdf, id=27, 560.0925pt x 349.305pt>
-=======
-<report_files/figure-latex/RearKilled-1.pdf, id=19, 560.0925pt x 349.305pt>
->>>>>>> siyili
+<report_files/figure-latex/RearKilled-1.pdf, id=15, 560.0925pt x 349.305pt>
 File: report_files/figure-latex/RearKilled-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/RearKilled-1.pdf>
 Package luatex.def Info: report_files/figure-latex/RearKilled-1.pdf  used on in
 put line 323.
 (luatex.def)             Requested size: 455.26205pt x 283.92686pt.
-<<<<<<< HEAD
-<report_files/figure-latex/VanKilled-1.pdf, id=28, 562.1pt x 349.305pt>
-=======
-<report_files/figure-latex/VanKilled-1.pdf, id=20, 562.1pt x 349.305pt>
->>>>>>> siyili
+<report_files/figure-latex/VanKilled-1.pdf, id=16, 562.1pt x 349.305pt>
 File: report_files/figure-latex/VanKilled-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/VanKilled-1.pdf>
 Package luatex.def Info: report_files/figure-latex/VanKilled-1.pdf  used on inp
@@ -1834,81 +1810,80 @@ ut line 329.
 (luatex.def)             Requested size: 455.24706pt x 282.90352pt.
 [2<./report_files/figure-latex/DriversKilled-1.pdf>] [3<./report_files/figure-la
 tex/FrontKilled-1.pdf><./report_files/figure-latex/RearKilled-1.pdf>] [4<./repor
-<<<<<<< HEAD
 t_files/figure-latex/VanKilled-1.pdf>] [5]
 LaTeX Font Info:    Trying to load font information for TS1+mdbch on input line
- 418.
+ 419.
 
 (/Users/fortyoneli/Library/TinyTeX/texmf-dist/tex/latex/mathdesign/mdbch/ts1mdb
 ch.fd
 File: ts1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for TS1/mdbch.
 )
 LaTeX Font Info:    Font shape `TS1/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 418.
-<report_files/figure-latex/myggpair-1.pdf, id=108, 568.1225pt x 351.3125pt>
+(Font)              scaled to size 10.51207pt on input line 419.
+
+LaTeX Warning: Citation '10' on page 6 undefined on input line 466.
+
+<report_files/figure-latex/myggpair-1.pdf, id=95, 568.1225pt x 351.3125pt>
 File: report_files/figure-latex/myggpair-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/myggpair-1.pdf>
 Package luatex.def Info: report_files/figure-latex/myggpair-1.pdf  used on inpu
-t line 469.
+t line 470.
 (luatex.def)             Requested size: 455.26146pt x 281.5221pt.
 [6
 
 ]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.24173pt on input line 485.
-[7<./report_files/figure-latex/myggpair-1.pdf>] (./report.aux)
-=======
-t_files/figure-latex/VanKilled-1.pdf>]
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.24173pt on input line 414.
-[5]
-<report_files/figure-latex/residuals-1.pdf, id=100, 568.1225pt x 349.305pt>
-File: report_files/figure-latex/residuals-1.pdf Graphic file (type pdf)
-<use report_files/figure-latex/residuals-1.pdf>
-Package luatex.def Info: report_files/figure-latex/residuals-1.pdf  used on inp
-ut line 445.
+(Font)              scaled to size 9.24173pt on input line 487.
+[7<./report_files/figure-latex/myggpair-1.pdf>] [8]
+<report_files/figure-latex/redsduals-1.pdf, id=129, 568.1225pt x 349.305pt>
+File: report_files/figure-latex/redsduals-1.pdf Graphic file (type pdf)
+<use report_files/figure-latex/redsduals-1.pdf>
+Package luatex.def Info: report_files/figure-latex/redsduals-1.pdf  used on inp
+ut line 520.
 (luatex.def)             Requested size: 455.26146pt x 279.9134pt.
 
-LaTeX Warning: Empty bibliography on input line 455.
+LaTeX Warning: Citation '11' on page 9 undefined on input line 524.
 
-[6<./report_files/figure-latex/residuals-1.pdf>] [7] (./report.aux)
->>>>>>> siyili
+
+LaTeX Warning: Empty bibliography on input line 530.
+
+[9
+
+<./report_files/figure-latex/redsduals-1.pdf>] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `report.out' has not changed.
-<<<<<<< HEAD
-(rerunfilecheck)             Checksum: CA4529C623A40D798936B16721BB5D65;757.
-=======
-(rerunfilecheck)             Checksum: CA328FA78CAEE9B917B943FB4770EDFA;311.
->>>>>>> siyili
+
+LaTeX Warning: There were undefined references.
+
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  9A2F0F0ECB92B3983B1F66D95625472B;1077.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                report
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'report.run.xml'.
 
 \openout1 = report.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
-<<<<<<< HEAD
- 32971 strings out of 478531
+ 33142 strings out of 478378
  100000,1648299 words of node,token memory allocated
- 731 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 16 kern, 1 glyph, 20 attribute, 77 glue_spe
-c, 20 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:1,2:685,3:203,4:105,5:97,6:53,7:3321,8:45,9:470,10:15,11:183
- 51361 multiletter control sequences out of 65536+600000
+ 712 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 15 kern, 1 glyph, 18 attribute, 77 glue_spe
+c, 18 attribute_list, 1 write nodes
+   avail lists: 1:1,2:688,3:466,4:101,5:112,6:54,7:3246,8:21,9:470,10:15,11:183
+ 51690 multiletter control sequences out of 65536+600000
  232 fonts using 19121487 bytes
- 98i,14n,135p,738b,1007s stack positions out of 5000i,500n,10000p,200000b,80000s
-=======
- 32725 strings out of 478531
- 100000,1648299 words of node,token memory allocated
- 694 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 13 kern, 1 glyph, 16 attribute, 77 glue_spe
-c, 16 attribute_list, 1 write nodes
-   avail lists: 1:1,2:690,3:446,4:85,5:96,6:63,7:4157,8:25,9:470,10:9,11:206
- 51131 multiletter control sequences out of 65536+600000
- 230 fonts using 19024459 bytes
- 98i,14n,135p,738b,807s stack positions out of 5000i,500n,10000p,200000b,80000s
->>>>>>> siyili
+ 85i,14n,135p,738b,807s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/Users/fortyoneli/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/User
 s/fortyoneli/Library/TinyTeX/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</Users
 /fortyoneli/Library/TinyTeX/texmf-dist/fonts/opentype/public/fontawesome/FontAwe
@@ -1920,19 +1895,10 @@ type1/public/bera/fvmr8a.pfb></Users/fortyoneli/Library/TinyTeX/texmf-dist/fonts
 /type1/public/bera/fvsb8a.pfb></Users/fortyoneli/Library/TinyTeX/texmf-dist/font
 s/type1/public/bera/fvsr8a.pfb></Users/fortyoneli/Library/TinyTeX/texmf-dist/fon
 ts/type1/public/mathdesign/mdbch/md-chr8t.pfb>
-<<<<<<< HEAD
-Output written on report.pdf (7 pages, 7850724 bytes).
+Output written on report.pdf (9 pages, 7874154 bytes).
 
-PDF statistics: 171 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 131072)
- 25 words of extra memory for PDF output out of 10000 (max. 100000000)
-=======
-Output written on report.pdf (7 pages, 7567534 bytes).
-
-PDF statistics: 156 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 131072)
- 9 words of extra memory for PDF output out of 10000 (max. 100000000)
->>>>>>> siyili
+PDF statistics: 180 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

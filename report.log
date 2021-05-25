@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.2)  24 MAY 2021 22:48
+=======
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.2)  25 MAY 2021 11:25
+>>>>>>> siyili
  restricted system commands enabled.
 **report.tex
 (./report.tex
@@ -1632,7 +1636,11 @@ ction with package mdbch, on input line 302.
 Package mathdesign/mdbch Warning: Package 'amsfonts' shouldn't be used in conjo
 nction with package mdbch, on input line 302.
 
+<<<<<<< HEAD
 <Figures/logo.jpg, id=16, 4015.0pt x 6022.5pt>
+=======
+<Figures/logo.jpg, id=8, 4015.0pt x 6022.5pt>
+>>>>>>> siyili
 File: Figures/logo.jpg Graphic file (type jpg)
 <use Figures/logo.jpg>
 Package luatex.def Info: Figures/logo.jpg  used on input line 303.
@@ -1780,7 +1788,11 @@ Overfull \hbox (56.23262pt too wide) detected at line 303
 
 {/Users/fortyoneli/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 <./Figures/logo.jpg>]
+<<<<<<< HEAD
 <report_files/figure-latex/DriversKilled-1.pdf, id=25, 562.1pt x 349.305pt>
+=======
+<report_files/figure-latex/DriversKilled-1.pdf, id=17, 562.1pt x 349.305pt>
+>>>>>>> siyili
 File: report_files/figure-latex/DriversKilled-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/DriversKilled-1.pdf>
 Package luatex.def Info: report_files/figure-latex/DriversKilled-1.pdf  used on
@@ -1790,19 +1802,31 @@ LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 10.51207pt on input line 312.
 LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
 (Font)              scaled to size 10.51207pt on input line 312.
+<<<<<<< HEAD
 <report_files/figure-latex/FrontKilled-1.pdf, id=26, 562.1pt x 349.305pt>
+=======
+<report_files/figure-latex/FrontKilled-1.pdf, id=18, 562.1pt x 349.305pt>
+>>>>>>> siyili
 File: report_files/figure-latex/FrontKilled-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/FrontKilled-1.pdf>
 Package luatex.def Info: report_files/figure-latex/FrontKilled-1.pdf  used on i
 nput line 317.
 (luatex.def)             Requested size: 455.24706pt x 282.90352pt.
+<<<<<<< HEAD
 <report_files/figure-latex/RearKilled-1.pdf, id=27, 560.0925pt x 349.305pt>
+=======
+<report_files/figure-latex/RearKilled-1.pdf, id=19, 560.0925pt x 349.305pt>
+>>>>>>> siyili
 File: report_files/figure-latex/RearKilled-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/RearKilled-1.pdf>
 Package luatex.def Info: report_files/figure-latex/RearKilled-1.pdf  used on in
 put line 323.
 (luatex.def)             Requested size: 455.26205pt x 283.92686pt.
+<<<<<<< HEAD
 <report_files/figure-latex/VanKilled-1.pdf, id=28, 562.1pt x 349.305pt>
+=======
+<report_files/figure-latex/VanKilled-1.pdf, id=20, 562.1pt x 349.305pt>
+>>>>>>> siyili
 File: report_files/figure-latex/VanKilled-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/VanKilled-1.pdf>
 Package luatex.def Info: report_files/figure-latex/VanKilled-1.pdf  used on inp
@@ -1810,6 +1834,7 @@ ut line 329.
 (luatex.def)             Requested size: 455.24706pt x 282.90352pt.
 [2<./report_files/figure-latex/DriversKilled-1.pdf>] [3<./report_files/figure-la
 tex/FrontKilled-1.pdf><./report_files/figure-latex/RearKilled-1.pdf>] [4<./repor
+<<<<<<< HEAD
 t_files/figure-latex/VanKilled-1.pdf>] [5]
 LaTeX Font Info:    Trying to load font information for TS1+mdbch on input line
  418.
@@ -1832,17 +1857,38 @@ t line 469.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 9.24173pt on input line 485.
 [7<./report_files/figure-latex/myggpair-1.pdf>] (./report.aux)
+=======
+t_files/figure-latex/VanKilled-1.pdf>]
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.24173pt on input line 414.
+[5]
+<report_files/figure-latex/residuals-1.pdf, id=100, 568.1225pt x 349.305pt>
+File: report_files/figure-latex/residuals-1.pdf Graphic file (type pdf)
+<use report_files/figure-latex/residuals-1.pdf>
+Package luatex.def Info: report_files/figure-latex/residuals-1.pdf  used on inp
+ut line 445.
+(luatex.def)             Requested size: 455.26146pt x 279.9134pt.
+
+LaTeX Warning: Empty bibliography on input line 455.
+
+[6<./report_files/figure-latex/residuals-1.pdf>] [7] (./report.aux)
+>>>>>>> siyili
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
+<<<<<<< HEAD
 (rerunfilecheck)             Checksum: CA4529C623A40D798936B16721BB5D65;757.
+=======
+(rerunfilecheck)             Checksum: CA328FA78CAEE9B917B943FB4770EDFA;311.
+>>>>>>> siyili
 Package logreq Info: Writing requests to 'report.run.xml'.
 
 \openout1 = report.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
+<<<<<<< HEAD
  32971 strings out of 478531
  100000,1648299 words of node,token memory allocated
  731 words of node memory still in use:
@@ -1852,6 +1898,17 @@ c, 20 attribute_list, 1 write, 1 pdf_action nodes
  51361 multiletter control sequences out of 65536+600000
  232 fonts using 19121487 bytes
  98i,14n,135p,738b,1007s stack positions out of 5000i,500n,10000p,200000b,80000s
+=======
+ 32725 strings out of 478531
+ 100000,1648299 words of node,token memory allocated
+ 694 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 13 kern, 1 glyph, 16 attribute, 77 glue_spe
+c, 16 attribute_list, 1 write nodes
+   avail lists: 1:1,2:690,3:446,4:85,5:96,6:63,7:4157,8:25,9:470,10:9,11:206
+ 51131 multiletter control sequences out of 65536+600000
+ 230 fonts using 19024459 bytes
+ 98i,14n,135p,738b,807s stack positions out of 5000i,500n,10000p,200000b,80000s
+>>>>>>> siyili
 {/Users/fortyoneli/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/User
 s/fortyoneli/Library/TinyTeX/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</Users
 /fortyoneli/Library/TinyTeX/texmf-dist/fonts/opentype/public/fontawesome/FontAwe
@@ -1863,10 +1920,19 @@ type1/public/bera/fvmr8a.pfb></Users/fortyoneli/Library/TinyTeX/texmf-dist/fonts
 /type1/public/bera/fvsb8a.pfb></Users/fortyoneli/Library/TinyTeX/texmf-dist/font
 s/type1/public/bera/fvsr8a.pfb></Users/fortyoneli/Library/TinyTeX/texmf-dist/fon
 ts/type1/public/mathdesign/mdbch/md-chr8t.pfb>
+<<<<<<< HEAD
 Output written on report.pdf (7 pages, 7850724 bytes).
 
 PDF statistics: 171 PDF objects out of 1000 (max. 8388607)
  130 compressed objects within 2 object streams
  25 named destinations out of 1000 (max. 131072)
  25 words of extra memory for PDF output out of 10000 (max. 100000000)
+=======
+Output written on report.pdf (7 pages, 7567534 bytes).
+
+PDF statistics: 156 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 131072)
+ 9 words of extra memory for PDF output out of 10000 (max. 100000000)
+>>>>>>> siyili
 

@@ -121,6 +121,7 @@ There is little change in number of rear seat passengers killed (figure \@ref(fi
 
 We can also see this in tabular format, so it is easier to see the effect of the law numerically (table \@ref(tab:DriverTable), table \@ref(tab:RearTable), table \@ref(tab:FrontTable), table \@ref(tab:VanTable)).
 
+<<<<<<< HEAD
 \clearpage
 
 
@@ -177,6 +178,39 @@ seatbelts%>%
 
 - It also indicates that the relationships between kms and Driverskilled variable, PetrolPrice and Driverskilled, and law and Driverskilled are negative.
 
+=======
+{Section 2}
+
+## Can we build an model among these variables?
+
+
+```{r model,message=FALSE, warning=FALSE}
+Seatbelts%>%as.data.frame()->seatbelts
+seatbelts%>%
+  mutate(law=as.factor(law))->Seatbelt
+
+fit<-lm(DriversKilled ~ ., data=Seatbelt)
+summary(fit)
+```
+
+The linear model shows that just the drivers variable are significant which means that the drivers are fit the model. Other variables include the Intercept are not significant since their p-value are larger than 0.05, which means that the model can not fit all the variables very well.
+
+```{r residuals, message=FALSE, warning=FALSE, fig.cap="residuals VS fitted value"}
+library(broom)
+aug<-augment(fit)
+
+ ggplot(aug, aes(x=.fitted, y=.resid))+
+  geom_point()+
+  geom_smooth()->res
+ 
+res+geom_hline(yintercept=0, color="red")+
+  ggtitle("residuals VS fitted value")
+```
+
+In order to analyze the residuals, I use the **broom** package(/cite{11}).
+
+From the figure \@ref(fig:residuals), it indicates that the residuals does not include obvious pattern of the variables since the residuals are randomly around the red line. It means that the model can capture most information about the response variable DriversKilled. But we can see that the tail at the beginning and end is not like a straingt since the obervations are not enough at the end and the beginning.
+>>>>>>> siyili
 
 
 {Section 3}

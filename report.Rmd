@@ -42,7 +42,6 @@ output:
 ```{r , echo = FALSE, include=FALSE, message = FALSE, warning = FALSE}
 # Libraries
 set.seed(96024)
-
 library(tidyverse)
 library(readr)
 library(kableExtra)
@@ -143,18 +142,37 @@ labels=month.abb), Seatbelts)
 ```{r figureE, echo = FALSE, message = FALSE, warning = FALSE}
 selectdata <- Seatbelts %>% 
   select(DriversKilled, drivers, front, rear, Year)
-
 ggplot(data = selectdata) +
   geom_smooth(mapping = aes(x = Year, y = DriversKilled)) +
   ggtitle("DriversKilled Trend Line")->f1
-
 ggplot(data = selectdata) +
-  geom_smooth(mapping = aes(x = Year, y = drivers)) +
-  ggtitle("DriversDeath Trend Line")->f2
-
+  geom_smooth(mapping = aes(x = Year, y = front)) +
+  ggtitle("FrontDeath Trend Line")->f2
 library(gridExtra)
 grid.arrange(f1, f2)
 ```
+
+According to Figure \@ref(fig:figureE), as we can see, the trend line of DriversKilled and FrontDeath after 1970 began to decline. The reason is Successive UK governments proposed, but failed to deliver, seat belt legislation throughout the 1970s. Front seat belts were compulsory equipment on all new cars registered in the UK from 1968, although it did not become compulsory for them to be worn until 1983. (\cite{richens2000condoms}) \clearpage
+
+```{r Bluebox, echo = FALSE, message = FALSE, warning = FALSE}
+Bluebox <-ggplot(Seatbelts, aes(x=factor(law), y =DriversKilled)) +geom_boxplot(fill = "skyblue") +theme_grey()+ylab ("Monthly Driver Mortality")+xlab("Before and after law introduced")
+Bluebox
+```
+
+From the figure \@ref(fig:Bluebox), it is clear that the range of monthly deaths among drivers before the law was higher than after it was enacted.
+
+```{r Beforelawsub, echo = FALSE, message = FALSE, warning = FALSE}
+Beforelawsub <-filter(Seatbelts, law ==0)
+summary(Beforelawsub)
+```
+
+```{r Afterlawsub, echo = FALSE, message = FALSE, warning = FALSE}
+Afterlawsub <-filter(Seatbelts, law!=0)
+summary(Afterlawsub)
+```
+
+From the tables \@ref(tab:Beforelawsub) and \@ref(tab:Afterlawsub)
+Before law introduced, the median of DriversKilled is 121, the minimum number is 79 and the maximum number is 198. After introduced, the median of DriversKilled is 92, the minimum number is 60 and the maximum number is 154. We can see that the law is effective in helping drivers stay away from death, since it is introduced on 31st January 1983.
 
 According to Figure \@ref(fig:figureE), as we can see, the trend line after 1970 began to decline. The reason is Successive UK governments proposed, but failed to deliver, seat belt legislation throughout the 1970s. Front seat belts were compulsory equipment on all new cars registered in the UK from 1968, although it did not become compulsory for them to be worn until 1983. (\cite{richens2000condoms}) \clearpage
 

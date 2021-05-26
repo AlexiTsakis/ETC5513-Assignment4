@@ -303,118 +303,16 @@
 \begin{document}
 \titlepage
 
-\{Section 1\}
-
-\#\#\#\#Compulsory Seatbelts 1983
-
-\begin{figure}
-\centering
-\includegraphics{report_files/figure-latex/DriversKilled-1.pdf}
-\caption{\label{fig:DriversKilled}Drivers killed in accidents over time}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics{report_files/figure-latex/FrontKilled-1.pdf}
-\caption{\label{fig:FrontKilled}Frontseat passengers killed in accidents over time}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics{report_files/figure-latex/RearKilled-1.pdf}
-\caption{\label{fig:RearKilled}Backseat passengers killed in accidents over time}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics{report_files/figure-latex/VanKilled-1.pdf}
-\caption{\label{fig:VanKilled}Light goods vehicle drivers killed in accidents over time}
-\end{figure}
-
-\begin{table}
-
-\caption{\label{tab:DriverTable}Drivers killed before and after law}
-\centering
-\begin{tabular}[t]{r|r}
-\hline
-law & DriversKilled\_Average\\
-\hline
-0 & 125.8698\\
-\hline
-1 & 100.2609\\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}
-
-\caption{\label{tab:RearTable}Back seat passengers killed before and after law}
-\centering
-\begin{tabular}[t]{r|r}
-\hline
-law & Rear\_Average\\
-\hline
-0 & 400.3195\\
-\hline
-1 & 407.7391\\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}
-
-\caption{\label{tab:FrontTable}Front seat passengers killed before and after law}
-\centering
-\begin{tabular}[t]{r|r}
-\hline
-law & Front\_Average\\
-\hline
-0 & 873.4556\\
-\hline
-1 & 570.9565\\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}
-
-\caption{\label{tab:VanTable}Light good vehicle drivers killed before and after law}
-\centering
-\begin{tabular}[t]{r|r}
-\hline
-law & Van\_Average\\
-\hline
-0 & 9.585799\\
-\hline
-1 & 5.173913\\
-\hline
-\end{tabular}
-\end{table}
-
-In this section we look at the effect of seatbelts on driver deaths in the UK. Front seatbelts were compulsory on all new cars registered in the UK from 1968, however it was not required for them to be worn until 1983. In this section, we will answer the question - did mandatory wearing of frontrow seatbelts prevent deaths for drivers and passengers?
-
-First, to answer if any relationships shown are causation and not simply correlation, we ask - why do seatbelts prevent deaths? According to the National Highway Traffic Safety Administration, the primary reasons why seatbelts prevent death is that ``Buckling up helps keep you safe and secure inside your vehicle, whereas not buckling up can result in being totally ejected from the vehicle in a crash, which is almost always deadly.'' (NHTSA 2021)
-
-These scenarios are referred to as ``secondary collisions'' - i.e.~a crash event that results from the impact of an initial collison, such as ejection from a vehicle, or even a high speed impact with objects inside the vehicle.
-
-Now that we understand the theory behind the impact of seatbelts on preventing death, let us look at the data:
-
-There is a clear negative correlation between frontrow passengers and light good vehicle drivers killed since the introduction of the law (figure \ref{fig:FrontKilled}, figure \ref{fig:VanKilled}), data from the introduction of the law shown in blue).
-
-There is also a clear reduction in number of drivers killed (figure \ref{fig:DriversKilled}) since the introduction of compulsory seatbelts - the lack of change since the introduction of the law, but the large change since approximately 1973 can be described as " drivers that are least likely to use seat belts might be those that are more likely to be involved in an accident" (Cohen, A. and Einav. L 2003) - i.e.~that careful drivers adopted seatbelts already without the law, and those likely to get involved in accidents would be unlikely to wear seatbelts even with the law in place.
-
-There is little change in number of rear seat passengers killed (figure \ref{fig:RearKilled}) - this is because the regulations and law were only for front seat seatbelts, and not backseat seatbelts, suggesting the total number of accidents didn't change.
-
-We can also see this in tabular format, so it is easier to see the effect of the law numerically (table \ref{tab:DriverTable}, table \ref{tab:RearTable}, table \ref{tab:FrontTable}, table \ref{tab:VanTable}).
-
-\{Section 2\}
-
 \{Section 3\}
 
 \hypertarget{research-questions}{%
 \section{Research Questions}\label{research-questions}}
 
-Has the mandatory seat belt policy been statistically effective since 1983?
+\begin{itemize}
+\tightlist
+\item
+  From the data on the number of driver deaths, which time period was the peak, and what historical facts accompany the change after the peak ? How about the trend before and after law introduced ?
+\end{itemize}
 
 \hypertarget{data-analysis}{%
 \section{Data Analysis}\label{data-analysis}}
@@ -422,7 +320,54 @@ Has the mandatory seat belt policy been statistically effective since 1983?
 \hypertarget{analysis-of-trends-in-driverkilled-before-and-after-1983}{%
 \subsection{Analysis of trends in driverkilled before and after 1983}\label{analysis-of-trends-in-driverkilled-before-and-after-1983}}
 
-\includegraphics{report_files/figure-latex/figure1-1.pdf}
+\includegraphics{report_files/figure-latex/figureE-1.pdf}
+
+According to Figure \ref{fig:figureE}, as we can see, the trend line after 1970 began to decline. The reason is Successive UK governments proposed, but failed to deliver, seat belt legislation throughout the 1970s. Front seat belts were compulsory equipment on all new cars registered in the UK from 1968, although it did not become compulsory for them to be worn until 1983. (\cite{richens2000condoms}) \clearpage
+
+\includegraphics{report_files/figure-latex/Bluebox-1.pdf}
+
+From the figure \ref{fig:Bluebox}, it is clear that the range of monthly deaths among drivers before the law was higher than after it was enacted.
+
+\begin{verbatim}
+##       Year          Month    DriversKilled      drivers         front       
+##  Min.   :1969   Jan    :15   Min.   : 79.0   Min.   :1309   Min.   : 567.0  
+##  1st Qu.:1972   Feb    :14   1st Qu.:108.0   1st Qu.:1511   1st Qu.: 767.0  
+##  Median :1976   Mar    :14   Median :121.0   Median :1653   Median : 860.0  
+##  Mean   :1976   Apr    :14   Mean   :125.9   Mean   :1718   Mean   : 873.5  
+##  3rd Qu.:1979   May    :14   3rd Qu.:140.0   3rd Qu.:1926   3rd Qu.: 986.0  
+##  Max.   :1983   Jun    :14   Max.   :198.0   Max.   :2654   Max.   :1299.0  
+##                 (Other):84                                                  
+##       rear            kms         PetrolPrice        VanKilled           law   
+##  Min.   :224.0   Min.   : 7685   Min.   :0.08118   Min.   : 2.000   Min.   :0  
+##  1st Qu.:344.0   1st Qu.:12387   1st Qu.:0.09078   1st Qu.: 7.000   1st Qu.:0  
+##  Median :401.0   Median :14455   Median :0.10273   Median :10.000   Median :0  
+##  Mean   :400.3   Mean   :14463   Mean   :0.10187   Mean   : 9.586   Mean   :0  
+##  3rd Qu.:454.0   3rd Qu.:16585   3rd Qu.:0.11132   3rd Qu.:13.000   3rd Qu.:0  
+##  Max.   :646.0   Max.   :21040   Max.   :0.13303   Max.   :17.000   Max.   :0  
+## 
+\end{verbatim}
+
+\begin{verbatim}
+##       Year          Month    DriversKilled      drivers         front      
+##  Min.   :1983   Feb    : 2   Min.   : 60.0   Min.   :1057   Min.   :426.0  
+##  1st Qu.:1983   Mar    : 2   1st Qu.: 85.0   1st Qu.:1171   1st Qu.:516.0  
+##  Median :1984   Apr    : 2   Median : 92.0   Median :1282   Median :585.0  
+##  Mean   :1984   May    : 2   Mean   :100.3   Mean   :1322   Mean   :571.0  
+##  3rd Qu.:1984   Jun    : 2   3rd Qu.:119.0   3rd Qu.:1464   3rd Qu.:629.5  
+##  Max.   :1984   Jul    : 2   Max.   :154.0   Max.   :1763   Max.   :721.0  
+##                 (Other):11                                                 
+##       rear            kms         PetrolPrice       VanKilled          law   
+##  Min.   :296.0   Min.   :15511   Min.   :0.1131   Min.   :2.000   Min.   :1  
+##  1st Qu.:347.0   1st Qu.:17971   1st Qu.:0.1148   1st Qu.:3.500   1st Qu.:1  
+##  Median :408.0   Median :19162   Median :0.1161   Median :5.000   Median :1  
+##  Mean   :407.7   Mean   :18890   Mean   :0.1165   Mean   :5.174   Mean   :1  
+##  3rd Qu.:471.5   3rd Qu.:19952   3rd Qu.:0.1180   3rd Qu.:7.000   3rd Qu.:1  
+##  Max.   :521.0   Max.   :21626   Max.   :0.1201   Max.   :8.000   Max.   :1  
+## 
+\end{verbatim}
+
+From the tables \ref{tab:Beforelawsub} and \ref{tab:Afterlawsub}
+Before law introduced, the median of DriversKilled is 121, the minimum number is 79 and the maximum number is 198. After introduced, the median of DriversKilled is 92, the minimum number is 60 and the maximum number is 154. We can see that the law is effective in helping drivers stay away from death, since it is introduced on 31st January 1983.
 
 \printbibliography
 

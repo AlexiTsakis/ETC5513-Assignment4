@@ -1,20 +1,20 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.21)  22 MAY 2021 14:03
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.26)  26 MAY 2021 02:46
  restricted system commands enabled.
 **report.tex
 (./report.tex
 LaTeX2e <2020-10-01> patch level 4
-Lua module: luaotfload 2021-01-08 3.17 Lua based OpenType font support
-Lua module: lualibs 2020-12-30 2.73 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2020-12-30 2.73 ConTeXt Lua libraries -- extended c
+Lua module: luaotfload 2021-05-21 3.18 Lua based OpenType font support
+Lua module: lualibs 2021-05-20 2.74 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2021-05-20 2.74 ConTeXt Lua libraries -- extended c
 ollection.
 luaotfload | conf : Root cache directory is "/Users/Y.W/Library/TinyTeX/texmf-va
 r/luatex-cache/generic/names".
-luaotfload | init : Loading fontloader "fontloader-2021-01-07.lua" from kpse-res
+luaotfload | init : Loading fontloader "fontloader-2021-05-20.lua" from kpse-res
 olved path "/Users/Y.W/Library/TinyTeX/texmf-dist/tex/luatex/luaotfload/fontload
-er-2021-01-07.lua".
+er-2021-05-20.lua".
 Lua-only attribute luaotfload@noligature = 1
 Lua-only attribute luaotfload@syllabe = 2
-luaotfload | init : Context OpenType loader version 0x1.8e76c8b439581p+1
+luaotfload | init : Context OpenType loader version 3.116
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' at position 1 in `glyph_stream_provider'.
@@ -30,6 +30,7 @@ Inserting `luaotfload.harf.finalize_hlist' at position 2 in `hpack_filter'.
 Inserting `luaotfload.cleanup_files' at position 1 in `wrapup_run'.
 Inserting `luaotfload.harf.finalize_unicode' at position 1 in `finish_pdffile'.
 Inserting `luaotfload.glyphinfo' at position 1 in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 4
 Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
 font'.
 Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_fon
@@ -1708,78 +1709,63 @@ Overfull \hbox (56.23262pt too wide) detected at line 304
 
 {/Users/Y.W/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./Figu
 res/logo.jpg>]
-<report_files/figure-latex/DriversKilled-1.pdf, id=13, 578.16pt x 361.35pt>
-File: report_files/figure-latex/DriversKilled-1.pdf Graphic file (type pdf)
-<use report_files/figure-latex/DriversKilled-1.pdf>
-Package luatex.def Info: report_files/figure-latex/DriversKilled-1.pdf  used on
- input line 312.
+LaTeX Font Info:    Trying to load font information for TS1+mdbch on input line
+ 314.
+(/Users/Y.W/Library/TinyTeX/texmf-dist/tex/latex/mathdesign/mdbch/ts1mdbch.fd
+File: ts1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for TS1/mdbch.
+)
+LaTeX Font Info:    Font shape `TS1/mdbch/m/n' will be
+(Font)              scaled to size 10.51207pt on input line 314.
+<report_files/figure-latex/figureE-1.pdf, id=13, 578.16pt x 361.35pt>
+File: report_files/figure-latex/figureE-1.pdf Graphic file (type pdf)
+<use report_files/figure-latex/figureE-1.pdf>
+Package luatex.def Info: report_files/figure-latex/figureE-1.pdf  used on input
+ line 323.
 (luatex.def)             Requested size: 455.24165pt x 284.52603pt.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 10.51207pt on input line 313.
-LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
-(Font)              scaled to size 10.51207pt on input line 313.
-<report_files/figure-latex/FrontKilled-1.pdf, id=14, 578.16pt x 361.35pt>
-File: report_files/figure-latex/FrontKilled-1.pdf Graphic file (type pdf)
-<use report_files/figure-latex/FrontKilled-1.pdf>
-Package luatex.def Info: report_files/figure-latex/FrontKilled-1.pdf  used on i
-nput line 318.
-(luatex.def)             Requested size: 455.24165pt x 284.52603pt.
-<report_files/figure-latex/RearKilled-1.pdf, id=15, 578.16pt x 361.35pt>
-File: report_files/figure-latex/RearKilled-1.pdf Graphic file (type pdf)
-<use report_files/figure-latex/RearKilled-1.pdf>
-Package luatex.def Info: report_files/figure-latex/RearKilled-1.pdf  used on in
-put line 324.
-(luatex.def)             Requested size: 455.24165pt x 284.52603pt.
-<report_files/figure-latex/VanKilled-1.pdf, id=16, 578.16pt x 361.35pt>
-File: report_files/figure-latex/VanKilled-1.pdf Graphic file (type pdf)
-<use report_files/figure-latex/VanKilled-1.pdf>
-Package luatex.def Info: report_files/figure-latex/VanKilled-1.pdf  used on inp
-ut line 330.
-(luatex.def)             Requested size: 455.24165pt x 284.52603pt.
-[2<./report_files/figure-latex/DriversKilled-1.pdf>] [3<./report_files/figure-la
-tex/FrontKilled-1.pdf><./report_files/figure-latex/RearKilled-1.pdf>]
+(Font)              scaled to size 10.51207pt on input line 325.
 
-LaTeX Warning: Reference `fig:FrontKilled' on page 4 undefined on input line 40
-2.
+LaTeX Warning: Reference `fig:figureE' on page 2 undefined on input line 325.
 
 
-LaTeX Warning: Reference `fig:VanKilled' on page 4 undefined on input line 402.
+LaTeX Warning: Citation 'richens2000condoms' on page 2 undefined on input line 
+325.
 
-
-[4<./report_files/figure-latex/VanKilled-1.pdf>]
-
-LaTeX Warning: Reference `fig:DriversKilled' on page 5 undefined on input line 
-404.
-
-
-LaTeX Warning: Reference `fig:RearKilled' on page 5 undefined on input line 406
-.
-
-
-LaTeX Warning: Reference `tab:DriverTable' on page 5 undefined on input line 40
-8.
-
-
-LaTeX Warning: Reference `tab:RearTable' on page 5 undefined on input line 408.
-
-
-
-LaTeX Warning: Reference `tab:FrontTable' on page 5 undefined on input line 408
-.
-
-
-LaTeX Warning: Reference `tab:VanTable' on page 5 undefined on input line 408.
-
-<report_files/figure-latex/figure1-1.pdf, id=73, 578.16pt x 361.35pt>
-File: report_files/figure-latex/figure1-1.pdf Graphic file (type pdf)
-<use report_files/figure-latex/figure1-1.pdf>
-Package luatex.def Info: report_files/figure-latex/figure1-1.pdf  used on input
- line 425.
+[2<./report_files/figure-latex/figureE-1.pdf>]
+<report_files/figure-latex/Bluebox-1.pdf, id=34, 578.16pt x 361.35pt>
+File: report_files/figure-latex/Bluebox-1.pdf Graphic file (type pdf)
+<use report_files/figure-latex/Bluebox-1.pdf>
+Package luatex.def Info: report_files/figure-latex/Bluebox-1.pdf  used on input
+ line 327.
 (luatex.def)             Requested size: 455.24165pt x 284.52603pt.
 
-LaTeX Warning: Empty bibliography on input line 427.
+LaTeX Warning: Reference `fig:Bluebox' on page 3 undefined on input line 329.
 
-[5] [6<./report_files/figure-latex/figure1-1.pdf>] (./report.aux)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.24173pt on input line 331.
+[3
+
+<./report_files/figure-latex/Bluebox-1.pdf>]
+
+LaTeX Warning: Reference `tab:Beforelawsub' on page 4 undefined on input line 3
+69.
+
+
+LaTeX Warning: Reference `tab:Afterlawsub' on page 4 undefined on input line 36
+9.
+
+
+LaTeX Warning: Empty bibliography on input line 372.
+
+
+Package caption Warning: Unused \captionsetup[figure] on input line 69.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[table] on input line 70.
+See the caption package documentation for explanation.
+
+[4] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1808,14 +1794,15 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32887 strings out of 478378
+ 33032 strings out of 478378
  100000,1648299 words of node,token memory allocated
- 703 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 14 kern, 1 glyph, 17 attribute, 77 glue_spe
-c, 17 attribute_list, 1 write nodes
-   avail lists: 1:1,2:688,3:203,4:65,5:95,6:54,7:3187,8:14,9:470,10:9,11:194
- 51470 multiletter control sequences out of 65536+600000
- 228 fonts using 18862135 bytes
+ 672 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 11 kern, 1 glyph, 13 attribute, 77 glue_spe
+c, 13 attribute_list, 1 write nodes
+   avail lists: 1:1,2:243,3:958,4:54,5:60,6:49,7:3358,8:14,9:218,10:6,11:104
+ 51630 multiletter control sequences out of 65536+600000
+ 230 fonts using 18994019 bytes
  85i,14n,135p,738b,807s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/Users/Y.W/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}
 ! error:  (type 1): cannot find encoding file 'texnansi.enc' for reading
 !  ==> Fatal error occurred, no output PDF file produced!

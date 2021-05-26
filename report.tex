@@ -303,15 +303,122 @@
 \begin{document}
 \titlepage
 
+\{Section 1\}
+
+\#\#\#\#Compulsory Seatbelts 1983
+
+\begin{figure}
+\centering
+\includegraphics{report_files/figure-latex/DriversKilled-1.pdf}
+\caption{\label{fig:DriversKilled}Drivers killed in accidents over time}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{report_files/figure-latex/FrontKilled-1.pdf}
+\caption{\label{fig:FrontKilled}Frontseat passengers killed in accidents over time}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{report_files/figure-latex/RearKilled-1.pdf}
+\caption{\label{fig:RearKilled}Backseat passengers killed in accidents over time}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{report_files/figure-latex/VanKilled-1.pdf}
+\caption{\label{fig:VanKilled}Light goods vehicle drivers killed in accidents over time}
+\end{figure}
+
+\begin{table}
+
+\caption{\label{tab:DriverTable}Drivers killed before and after law}
+\centering
+\begin{tabular}[t]{r|r}
+\hline
+law & DriversKilled\_Average\\
+\hline
+0 & 125.8698\\
+\hline
+1 & 100.2609\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}
+
+\caption{\label{tab:RearTable}Back seat passengers killed before and after law}
+\centering
+\begin{tabular}[t]{r|r}
+\hline
+law & Rear\_Average\\
+\hline
+0 & 400.3195\\
+\hline
+1 & 407.7391\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}
+
+\caption{\label{tab:FrontTable}Front seat passengers killed before and after law}
+\centering
+\begin{tabular}[t]{r|r}
+\hline
+law & Front\_Average\\
+\hline
+0 & 873.4556\\
+\hline
+1 & 570.9565\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}
+
+\caption{\label{tab:VanTable}Light good vehicle drivers killed before and after law}
+\centering
+\begin{tabular}[t]{r|r}
+\hline
+law & Van\_Average\\
+\hline
+0 & 9.585799\\
+\hline
+1 & 5.173913\\
+\hline
+\end{tabular}
+\end{table}
+
+In this section we look at the effect of seatbelts on driver deaths in the UK. Front seatbelts were compulsory on all new cars registered in the UK from 1968, however it was not required for them to be worn until 1983. In this section, we will answer the question - did mandatory wearing of frontrow seatbelts prevent deaths for drivers and passengers?
+
+First, to answer if any relationships shown are causation and not simply correlation, we ask - why do seatbelts prevent deaths? According to the National Highway Traffic Safety Administration, the primary reasons why seatbelts prevent death is that ``Buckling up helps keep you safe and secure inside your vehicle, whereas not buckling up can result in being totally ejected from the vehicle in a crash, which is almost always deadly.'' (NHTSA 2021)
+
+These scenarios are referred to as ``secondary collisions'' - i.e.~a crash event that results from the impact of an initial collison, such as ejection from a vehicle, or even a high speed impact with objects inside the vehicle.
+
+Now that we understand the theory behind the impact of seatbelts on preventing death, let us look at the data:
+
+There is a clear negative correlation between frontrow passengers and light good vehicle drivers killed since the introduction of the law (figure \ref{fig:FrontKilled}, figure \ref{fig:VanKilled}), data from the introduction of the law shown in blue).
+
+There is also a clear reduction in number of drivers killed (figure \ref{fig:DriversKilled}) since the introduction of compulsory seatbelts - the lack of change since the introduction of the law, but the large change since approximately 1973 can be described as " drivers that are least likely to use seat belts might be those that are more likely to be involved in an accident" (Cohen, A. and Einav. L 2003) - i.e.~that careful drivers adopted seatbelts already without the law, and those likely to get involved in accidents would be unlikely to wear seatbelts even with the law in place.
+
+There is little change in number of rear seat passengers killed (figure \ref{fig:RearKilled}) - this is because the regulations and law were only for front seat seatbelts, and not backseat seatbelts, suggesting the total number of accidents didn't change.
+
+We can also see this in tabular format, so it is easier to see the effect of the law numerically (table \ref{tab:DriverTable}, table \ref{tab:RearTable}, table \ref{tab:FrontTable}, table \ref{tab:VanTable}).
+
+\{Section 2\}
+
 \{Section 3\}
 
 \hypertarget{research-questions}{%
 \section{Research Questions}\label{research-questions}}
 
 \begin{itemize}
-\tightlist
 \item
   From the data on the number of driver deaths, which time period was the peak, and what historical facts accompany the change after the peak ? How about the trend before and after law introduced ?
+\item
+  Is there any relationship between season and drvierskilled?
 \end{itemize}
 
 \hypertarget{data-analysis}{%
@@ -322,7 +429,15 @@
 
 \includegraphics{report_files/figure-latex/figureE-1.pdf}
 
-According to Figure \ref{fig:figureE}, as we can see, the trend line after 1970 began to decline. The reason is Successive UK governments proposed, but failed to deliver, seat belt legislation throughout the 1970s. Front seat belts were compulsory equipment on all new cars registered in the UK from 1968, although it did not become compulsory for them to be worn until 1983. (\cite{richens2000condoms}) \clearpage
+According to Figure \ref{fig:figureE}, as we can see:
+
+\begin{itemize}
+\tightlist
+\item
+  the trend line of DriversKilled and FrontDeath after 1970 began to decline.
+\end{itemize}
+
+The reason is Successive UK governments proposed, but failed to deliver, seat belt legislation throughout the 1970s. Front seat belts were compulsory equipment on all new cars registered in the UK from 1968, although it did not become compulsory for them to be worn until 1983. (\cite{richens2000condoms}) \clearpage
 
 \includegraphics{report_files/figure-latex/Bluebox-1.pdf}
 
@@ -366,8 +481,27 @@ From the figure \ref{fig:Bluebox}, it is clear that the range of monthly deaths 
 ## 
 \end{verbatim}
 
-From the tables \ref{tab:Beforelawsub} and \ref{tab:Afterlawsub}
-Before law introduced, the median of DriversKilled is 121, the minimum number is 79 and the maximum number is 198. After introduced, the median of DriversKilled is 92, the minimum number is 60 and the maximum number is 154. We can see that the law is effective in helping drivers stay away from death, since it is introduced on 31st January 1983.
+From the tables \ref{tab:Beforelawsub} and \ref{tab:Afterlawsub} :
+
+\begin{itemize}
+\item
+  Before law introduced, the median of DriversKilled is 121, the minimum number is 79 and the maximum number is 198.
+\item
+  After introduced, the median of DriversKilled is 92, the minimum number is 60 and the maximum number is 154.
+\end{itemize}
+
+We can see that the law is effective in helping drivers stay away from death, since it is introduced on 31st January 1983.
+
+\includegraphics{report_files/figure-latex/season-1.pdf}
+
+From the figure \ref{fig:season}, there seems to be some seasonal correlation between driver deaths:
+
+\begin{itemize}
+\item
+  it is quite obvious that, there is more driver deaths and front deaths in autumn/winter than in spring/summer, somehow it is with seasonal effect.
+\item
+  based on the color plots, it can be seem that the number of driver deaths is the lowest after the front seatbelts legislation been introduced.
+\end{itemize}
 
 \printbibliography
 

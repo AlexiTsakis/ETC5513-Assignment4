@@ -214,6 +214,4 @@ In order to analyze the residuals, I use the **broom** package(\cite{11}).
 
 From the figure \@ref(fig:redsduals), it indicates that the residuals does not include obvious pattern of the variables since the residuals are randomly around the red line. It means that the model can capture most information about the response variable DriversKilled. But we can see that the tail at the beginning and end is not like a straight since the observations are not enough at the end and the beginning.
 
-
-
 {Section 3}

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.25)  30 MAY 2021 00:18
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.25)  30 MAY 2021 00:22
  restricted system commands enabled.
 **report.tex
 (./report.tex
@@ -1882,7 +1882,7 @@ Here is how much of LuaTeX's memory you used:
 c, 18 attribute_list, 1 write nodes
    avail lists: 1:1,2:688,3:546,4:101,5:118,6:54,7:3246,8:21,9:470,10:15,11:183
  51690 multiletter control sequences out of 65536+600000
- 232 fonts using 19121483 bytes
+ 232 fonts using 19121479 bytes
  85i,14n,135p,738b,807s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/Users/fortyoneli/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/User
 s/fortyoneli/Library/TinyTeX/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</Users
@@ -1895,7 +1895,7 @@ type1/public/bera/fvmr8a.pfb></Users/fortyoneli/Library/TinyTeX/texmf-dist/fonts
 /type1/public/bera/fvsb8a.pfb></Users/fortyoneli/Library/TinyTeX/texmf-dist/font
 s/type1/public/bera/fvsr8a.pfb></Users/fortyoneli/Library/TinyTeX/texmf-dist/fon
 ts/type1/public/mathdesign/mdbch/md-chr8t.pfb>
-Output written on report.pdf (9 pages, 7874009 bytes).
+Output written on report.pdf (9 pages, 7874004 bytes).
 
 PDF statistics: 180 PDF objects out of 1000 (max. 8388607)
  134 compressed objects within 2 object streams

@@ -55,7 +55,7 @@ knitr::opts_chunk$set(fig.pos = 'H', echo = FALSE, message = FALSE, warning = FA
 
 {Section 1}
 
-####Compulsory Seatbelts 1983
+#Compulsory Seatbelts 1983
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 Seatbelts_data = data.frame(as.matrix(Seatbelts),date=time(Seatbelts))
@@ -121,7 +121,7 @@ There is little change in number of rear seat passengers killed (figure \@ref(fi
 
 We can also see this in tabular format, so it is easier to see the effect of the law numerically (table \@ref(tab:DriverTable), table \@ref(tab:RearTable), table \@ref(tab:FrontTable), table \@ref(tab:VanTable)).
 
-<<<<<<< HEAD
+
 \clearpage
 
 
@@ -152,7 +152,8 @@ Seatbelts%>%as.data.frame()->seatbelts
 seatbelts%>%
   select("DriversKilled", "drivers", "front")%>%
   summary()%>%
-  kable(caption = "Summary of the three variabls")
+  kable(caption = "Summary of the three variabls")%>%
+  kable_styling(bootstrap_options = c("bordered", "hover"))
 ```
 From the table \@ref(tab:mytables) shows:
 
@@ -176,6 +177,8 @@ seatbelts%>%
 - The figure \@ref(fig:myggpair) shows that there are positive relationships between drivers variable and Driverskilled variable, front variable and Driverskilled variable, VanKilled and Driverskilled, rear variable and Driverskilled variable. Especially, we can see that the variables of front and drivers are highly positive related to the Driverskilled variable since the correlations between that are 0.707 and 0.889 respectively.
 
 - It also indicates that the relationships between kms and Driverskilled variable, PetrolPrice and Driverskilled, and law and Driverskilled are negative.
+
+- In fact, there are some correlations between each pair of variables but i just focus on the relationship between the response variable Driverskiied and other predictor.
 
 
 

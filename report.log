@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.25)  25 MAY 2021 11:58
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.25)  30 MAY 2021 00:18
  restricted system commands enabled.
 **report.tex
 (./report.tex
@@ -1812,40 +1812,40 @@ ut line 329.
 tex/FrontKilled-1.pdf><./report_files/figure-latex/RearKilled-1.pdf>] [4<./repor
 t_files/figure-latex/VanKilled-1.pdf>] [5]
 LaTeX Font Info:    Trying to load font information for TS1+mdbch on input line
- 419.
+ 418.
 
 (/Users/fortyoneli/Library/TinyTeX/texmf-dist/tex/latex/mathdesign/mdbch/ts1mdb
 ch.fd
 File: ts1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for TS1/mdbch.
 )
 LaTeX Font Info:    Font shape `TS1/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 419.
+(Font)              scaled to size 10.51207pt on input line 418.
 
-LaTeX Warning: Citation '10' on page 6 undefined on input line 466.
+LaTeX Warning: Citation '10' on page 6 undefined on input line 465.
 
 <report_files/figure-latex/myggpair-1.pdf, id=95, 568.1225pt x 351.3125pt>
 File: report_files/figure-latex/myggpair-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/myggpair-1.pdf>
 Package luatex.def Info: report_files/figure-latex/myggpair-1.pdf  used on inpu
-t line 470.
+t line 469.
 (luatex.def)             Requested size: 455.26146pt x 281.5221pt.
 [6
 
 ]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.24173pt on input line 487.
+(Font)              scaled to size 9.24173pt on input line 488.
 [7<./report_files/figure-latex/myggpair-1.pdf>] [8]
 <report_files/figure-latex/redsduals-1.pdf, id=129, 568.1225pt x 349.305pt>
 File: report_files/figure-latex/redsduals-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/redsduals-1.pdf>
 Package luatex.def Info: report_files/figure-latex/redsduals-1.pdf  used on inp
-ut line 520.
+ut line 521.
 (luatex.def)             Requested size: 455.26146pt x 279.9134pt.
 
-LaTeX Warning: Citation '11' on page 9 undefined on input line 524.
+LaTeX Warning: Citation '11' on page 9 undefined on input line 525.
 
 
-LaTeX Warning: Empty bibliography on input line 530.
+LaTeX Warning: Empty bibliography on input line 531.
 
 [9
 
@@ -1880,9 +1880,9 @@ Here is how much of LuaTeX's memory you used:
  712 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 15 kern, 1 glyph, 18 attribute, 77 glue_spe
 c, 18 attribute_list, 1 write nodes
-   avail lists: 1:1,2:688,3:466,4:101,5:112,6:54,7:3246,8:21,9:470,10:15,11:183
+   avail lists: 1:1,2:688,3:546,4:101,5:118,6:54,7:3246,8:21,9:470,10:15,11:183
  51690 multiletter control sequences out of 65536+600000
- 232 fonts using 19121487 bytes
+ 232 fonts using 19121483 bytes
  85i,14n,135p,738b,807s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/Users/fortyoneli/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/User
 s/fortyoneli/Library/TinyTeX/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</Users
@@ -1895,7 +1895,7 @@ type1/public/bera/fvmr8a.pfb></Users/fortyoneli/Library/TinyTeX/texmf-dist/fonts
 /type1/public/bera/fvsb8a.pfb></Users/fortyoneli/Library/TinyTeX/texmf-dist/font
 s/type1/public/bera/fvsr8a.pfb></Users/fortyoneli/Library/TinyTeX/texmf-dist/fon
 ts/type1/public/mathdesign/mdbch/md-chr8t.pfb>
-Output written on report.pdf (9 pages, 7874154 bytes).
+Output written on report.pdf (9 pages, 7874009 bytes).
 
 PDF statistics: 180 PDF objects out of 1000 (max. 8388607)
  134 compressed objects within 2 object streams

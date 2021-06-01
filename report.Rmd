@@ -46,7 +46,6 @@ library(tidyverse)
 library(readr)
 library(kableExtra)
 library(bookdown)
-library(ggplot2)
 ```
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
@@ -55,10 +54,10 @@ knitr::opts_chunk$set(fig.pos = 'H', echo = FALSE, message = FALSE, warning = FA
 
 {Section 1}
 
-####Compulsory Seatbelts 1983
+#Compulsory Seatbelts 1983
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
-Seatbelts_data = data.frame(as.matrix(Seatbelts), date=time(Seatbelts))
+Seatbelts_data = data.frame(as.matrix(Seatbelts),date=time(Seatbelts))
 ```
 
 ```{r DriversKilled, fig.cap = "Drivers killed in accidents over time", echo = FALSE, message = FALSE, warning = FALSE}
@@ -121,9 +120,100 @@ There is little change in number of rear seat passengers killed (figure \@ref(fi
 
 We can also see this in tabular format, so it is easier to see the effect of the law numerically (table \@ref(tab:DriverTable), table \@ref(tab:RearTable), table \@ref(tab:FrontTable), table \@ref(tab:VanTable)).
 
+
+\clearpage
+
+
 {Section 2}
 
+```{r, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(GGally)
+library(tidyverse)
+library(readr)
+library(broom)
+```
+
+```{r get-data}
+Seatbelts%>%as.data.frame()->seatbelts
+```
+# Reaseach Questions
+
+- Is there any relationship between the DriversKilled variable and other variables?
+
+- Can we build an model among these variables?
+
+
+# Analysis
+## Is there any relationship between the DriversKilled variable and other variables?
+
+```{r mytables, message=FALSE, warning=FALSE, fig.align='center', fig.pos="H"}
+seatbelts%>%
+  select("DriversKilled", "drivers", "front")%>%
+  summary()%>%
+  kable(caption = "Summary of the three variabls")%>%
+  kable_styling(bootstrap_options = c("bordered", "hover"))
+```
+From the table \@ref(tab:mytables) shows:
+
+- the minimum number of drivers killed is 60 and the maximum is 198. 
+
+- the minimum number of drivers is 1057 and the maximum is 2654. 
+
+- the minimum number of front-seat passengers killed or seriously injured is 426 and the maximum is 1299.
+
+- when the number of the drivers increase, the number of the drivers killed also increase. Therefore, I guess there is a positive relationship between the variable drivers and the variable drivers killed.
+ 
+In order to develop the relationship between the number of drivers and car drivers killed, we can use GGally package (\cite{10}) to produce the correlation graph.
+
+```{r myggpair, warning=FALSE, message=FALSE, fig.cap = "Correlation between variables", fig.align='center'}
+seatbelts%>% 
+  ggpairs()+
+  ggtitle("Correlation between variables")+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+```
+
+- The figure \@ref(fig:myggpair) shows that there are positive relationships between drivers variable and Driverskilled variable, front variable and Driverskilled variable, VanKilled and Driverskilled, rear variable and Driverskilled variable. Especially, we can see that the variables of front and drivers are highly positive related to the Driverskilled variable since the correlations between that are 0.707 and 0.889 respectively.
+
+- It also indicates that the relationships between kms and Driverskilled variable, PetrolPrice and Driverskilled, and law and Driverskilled are negative.
+
+- In fact, there are some correlations between each pair of variables but i just focus on the relationship between the response variable Driverskiied and other predictor.
+
+
+
+## Can we build an model among these variables?
+
+```{r model,message=FALSE, warning=FALSE}
+Seatbelts%>%as.data.frame()->seatbelts
+seatbelts%>%
+  mutate(law=as.factor(law))->Seatbelt
+fit<-lm(DriversKilled ~ ., data=Seatbelt)
+summary(fit)
+```
+
+The linear model shows that just the drivers variable are significant which means that the drivers are fit the model. Other variables include the Intercept are not significant since their p-value are larger than 0.05, which means that the model can not fit all the variables very well.
+
+\clearpage
+
+```{r, message=FALSE, warning=FALSE}
+aug<-augment(fit)
+```
+
+
+```{r redsduals, message=FALSE, warning=FALSE, fig.cap="residuals VS fitted value"}
+ggplot(aug, aes(x=.fitted, y=.resid))+
+  geom_point()+
+  geom_smooth()+
+   geom_hline(yintercept=0, color="red")+
+  ggtitle("residuals VS fitted value")
+```
+
+In order to analyze the residuals, I use the **broom** package(\cite{11}).
+
+From the figure \@ref(fig:redsduals), it indicates that the residuals does not include obvious pattern of the variables since the residuals are randomly around the red line. It means that the model can capture most information about the response variable DriversKilled. But we can see that the tail at the beginning and end is not like a straight since the observations are not enough at the end and the beginning.
+
 {Section 3}
+
 
 ```{r data, echo = FALSE, message = FALSE, warning = FALSE}
 data(Seatbelts)
@@ -189,10 +279,10 @@ We can see that the law is effective in helping drivers stay away from death, si
 
 ```{r season, echo = FALSE, message = FALSE, warning = FALSE}
  ggplot(data = Seatbelts) +
-  geom_point(mapping = aes(x = Month, y = DriversKilled, col=Seatbelts$law + 2))-> G1
+  geom_point(mapping = aes(x = Month, y = DriversKilled, col=law))-> G1
 
  ggplot(data = Seatbelts) +
-  geom_point(mapping = aes(x = Month, y = front, col=Seatbelts$law + 2))-> G2
+  geom_point(mapping = aes(x = Month, y = front, col=law))-> G2
  
  library(gridExtra)
 grid.arrange(G1, G2)
@@ -202,4 +292,4 @@ From the figure \@ref(fig:season), there seems to be some seasonal correlation b
 
 - it is quite obvious that, there is more driver deaths and front deaths in autumn/winter than in spring/summer, somehow it is with seasonal effect. 
 
-- based on the color plots, it can be seem that the number of driver deaths is the lowest after the front seatbelts legislation been introduced.
+- based on the color plots, it can be seem that the number of driver deaths is the lowest after the front seatbelt legislation been introduced. Snow, rain, fog, and other bad weather is the main reason, not only affect the driver's vision, but also increase the braking distance. 

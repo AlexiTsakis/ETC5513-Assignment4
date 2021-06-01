@@ -305,7 +305,7 @@
 
 \{Section 1\}
 
-\#\#\#\#Compulsory Seatbelts 1983
+\#Compulsory Seatbelts 1983
 
 \begin{figure}
 \centering
@@ -407,7 +407,125 @@ There is little change in number of rear seat passengers killed (figure \ref{fig
 
 We can also see this in tabular format, so it is easier to see the effect of the law numerically (table \ref{tab:DriverTable}, table \ref{tab:RearTable}, table \ref{tab:FrontTable}, table \ref{tab:VanTable}).
 
+\clearpage
+
 \{Section 2\}
+
+\hypertarget{reaseach-questions}{%
+\section{Reaseach Questions}\label{reaseach-questions}}
+
+\begin{itemize}
+\item
+  Is there any relationship between the DriversKilled variable and other variables?
+\item
+  Can we build an model among these variables?
+\end{itemize}
+
+\hypertarget{analysis}{%
+\section{Analysis}\label{analysis}}
+
+\hypertarget{is-there-any-relationship-between-the-driverskilled-variable-and-other-variables}{%
+\subsection{Is there any relationship between the DriversKilled variable and other variables?}\label{is-there-any-relationship-between-the-driverskilled-variable-and-other-variables}}
+
+\begin{table}
+
+\caption{\label{tab:mytables}Summary of the three variabls}
+\centering
+\begin{tabular}[t]{l|l|l|l}
+\hline
+  & DriversKilled &    drivers &     front\\
+\hline
+ & Min.   : 60.0 & Min.   :1057 & Min.   : 426.0\\
+\hline
+ & 1st Qu.:104.8 & 1st Qu.:1462 & 1st Qu.: 715.5\\
+\hline
+ & Median :118.5 & Median :1631 & Median : 828.5\\
+\hline
+ & Mean   :122.8 & Mean   :1670 & Mean   : 837.2\\
+\hline
+ & 3rd Qu.:138.0 & 3rd Qu.:1851 & 3rd Qu.: 950.8\\
+\hline
+ & Max.   :198.0 & Max.   :2654 & Max.   :1299.0\\
+\hline
+\end{tabular}
+\end{table}
+
+From the table \ref{tab:mytables} shows:
+
+\begin{itemize}
+\item
+  the minimum number of drivers killed is 60 and the maximum is 198.
+\item
+  the minimum number of drivers is 1057 and the maximum is 2654.
+\item
+  the minimum number of front-seat passengers killed or seriously injured is 426 and the maximum is 1299.
+\item
+  when the number of the drivers increase, the number of the drivers killed also increase. Therefore, I guess there is a positive relationship between the variable drivers and the variable drivers killed.
+\end{itemize}
+
+In order to develop the relationship between the number of drivers and car drivers killed, we can use GGally package (\cite{10}) to produce the correlation graph.
+
+\begin{figure}[H]
+
+{\centering \includegraphics{report_files/figure-latex/myggpair-1} 
+
+}
+
+\caption{Correlation between variables}\label{fig:myggpair}
+\end{figure}
+
+\begin{itemize}
+\item
+  The figure \ref{fig:myggpair} shows that there are positive relationships between drivers variable and Driverskilled variable, front variable and Driverskilled variable, VanKilled and Driverskilled, rear variable and Driverskilled variable. Especially, we can see that the variables of front and drivers are highly positive related to the Driverskilled variable since the correlations between that are 0.707 and 0.889 respectively.
+\item
+  It also indicates that the relationships between kms and Driverskilled variable, PetrolPrice and Driverskilled, and law and Driverskilled are negative.
+\item
+  In fact, there are some correlations between each pair of variables but i just focus on the relationship between the response variable Driverskiied and other predictor.
+\end{itemize}
+
+\hypertarget{can-we-build-an-model-among-these-variables}{%
+\subsection{Can we build an model among these variables?}\label{can-we-build-an-model-among-these-variables}}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = DriversKilled ~ ., data = Seatbelt)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -29.489  -7.620  -0.531   7.676  34.700 
+## 
+## Coefficients:
+##               Estimate Std. Error t value Pr(>|t|)    
+## (Intercept) -2.330e+01  1.472e+01  -1.583    0.115    
+## drivers      8.327e-02  5.544e-03  15.018   <2e-16 ***
+## front       -3.838e-03  1.723e-02  -0.223    0.824    
+## rear         5.189e-03  2.474e-02   0.210    0.834    
+## kms          5.875e-04  5.025e-04   1.169    0.244    
+## PetrolPrice -1.629e+01  8.643e+01  -0.188    0.851    
+## VanKilled    5.928e-02  2.911e-01   0.204    0.839    
+## law1         4.070e+00  4.076e+00   0.998    0.319    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 11.58 on 184 degrees of freedom
+## Multiple R-squared:  0.7993, Adjusted R-squared:  0.7917 
+## F-statistic: 104.7 on 7 and 184 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+The linear model shows that just the drivers variable are significant which means that the drivers are fit the model. Other variables include the Intercept are not significant since their p-value are larger than 0.05, which means that the model can not fit all the variables very well.
+
+\clearpage
+
+\begin{figure}
+\centering
+\includegraphics{report_files/figure-latex/redsduals-1.pdf}
+\caption{\label{fig:redsduals}residuals VS fitted value}
+\end{figure}
+
+In order to analyze the residuals, I use the \textbf{broom} package(\cite{11}).
+
+From the figure \ref{fig:redsduals}, it indicates that the residuals does not include obvious pattern of the variables since the residuals are randomly around the red line. It means that the model can capture most information about the response variable DriversKilled. But we can see that the tail at the beginning and end is not like a straight since the observations are not enough at the end and the beginning.
 
 \{Section 3\}
 
@@ -500,7 +618,7 @@ From the figure \ref{fig:season}, there seems to be some seasonal correlation be
 \item
   it is quite obvious that, there is more driver deaths and front deaths in autumn/winter than in spring/summer, somehow it is with seasonal effect.
 \item
-  based on the color plots, it can be seem that the number of driver deaths is the lowest after the front seatbelts legislation been introduced.
+  based on the color plots, it can be seem that the number of driver deaths is the lowest after the front seatbelts legislation been introduced. Snow, rain, fog, and other bad weather is the main reason, not only affect the driver's vision, but also increase the braking distance.
 \end{itemize}
 
 \printbibliography

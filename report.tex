@@ -557,13 +557,13 @@ The linear model shows that just the drivers variable are significant which mean
 
 \begin{figure}
 \centering
-\includegraphics{report_files/figure-latex/redsduals-1.pdf}
-\caption{\label{fig:redsduals}residuals VS fitted value}
+\includegraphics{report_files/figure-latex/residuals-1.pdf}
+\caption{\label{fig:residuals}residuals VS fitted value}
 \end{figure}
 
 In order to analyze the residuals, I use the \textbf{broom} package(\cite{11}).
 
-From the figure \ref{fig:redsduals}, it indicates that the residuals does not include obvious pattern of the variables since the residuals are randomly around the red line. It means that the model can capture most information about the response variable DriversKilled. But we can see that the tail at the beginning and end is not like a straight since the observations are not enough at the end and the beginning.
+From the figure \ref{fig:residuals}, it indicates that the residuals does not include obvious pattern of the variables since the residuals are randomly around the red line. It means that the model can capture most information about the response variable DriversKilled. But we can see that the tail at the beginning and end is not like a straight since the observations are not enough at the end and the beginning.
 
 \hypertarget{research-questions---yusen-wang}{%
 \section{Research Questions - Yusen Wang}\label{research-questions---yusen-wang}}
@@ -572,7 +572,7 @@ From the figure \ref{fig:redsduals}, it indicates that the residuals does not in
 \item
   From the data on the number of driver deaths, which time period was the peak, and what historical facts accompany the change after the peak ? How about the trend before and after law introduced ?
 \item
-  Is there any relationship between season and drvierskilled?
+  Is there any relationship between season and driverskilled?
 \end{itemize}
 
 \hypertarget{data-analysis}{%
@@ -665,9 +665,9 @@ Based on the analysis done in this report, our findings were as follows
 \begin{itemize}
 \tightlist
 \item
-  The mandatory seatbelt production law, as well as the mandatory seatbelt wearing law did have a statistically sigificant impact in reducing number of drivers, van drivers and front seat passengers killed. The laws slightly increased number of rear seat passengers killed, but not significantly so.
+  The mandatory seatbelt production law of 1968, as well as the mandatory seatbelt wearing law of 1983 did have a statistically significant impact in reducing number of drivers, van drivers and front seat passengers killed. The laws slightly increased number of rear seat passengers killed, but not significantly so.
 \item
-  There is no relationship between DriversKilled and any other variable in the dataset except number of drivers.
+  There is no statistically significant relationship between DriversKilled and any other variable in the dataset except number of drivers, as such we can't model DriversKilled very well as Drivers does not explain enough of the variance.
 \item
   The trough of drivers killed is after the seatbelt legislation was introduced.
 \item

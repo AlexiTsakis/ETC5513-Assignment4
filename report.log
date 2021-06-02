@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.6.2)  2 JUN 2021 02:32
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.6.2)  2 JUN 2021 04:21
  restricted system commands enabled.
 **report.tex
 (./report.tex
@@ -1478,7 +1478,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 303.
 LaTeX Info: Redefining \pageref on input line 303.
 LaTeX Info: Redefining \nameref on input line 303.
-(./report.out) (./report.out)
 \@outlinefile=\write4
 
 \openout4 = report.out
@@ -1564,7 +1563,7 @@ ction with package mdbch, on input line 303.
 Package mathdesign/mdbch Warning: Package 'amsfonts' shouldn't be used in conjo
 nction with package mdbch, on input line 303.
 
-<Figures/logo.jpg, id=16, 4015.0pt x 6022.5pt>
+<Figures/logo.jpg, id=4, 4015.0pt x 6022.5pt>
 File: Figures/logo.jpg Graphic file (type jpg)
 <use Figures/logo.jpg>
 Package luatex.def Info: Figures/logo.jpg  used on input line 304.
@@ -1710,7 +1709,7 @@ Overfull \hbox (56.23262pt too wide) detected at line 304
 
 {/Users/Y.W/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./Figu
 res/logo.jpg>]
-<report_files/figure-latex/DriversKilled-1.pdf, id=25, 578.16pt x 361.35pt>
+<report_files/figure-latex/DriversKilled-1.pdf, id=13, 578.16pt x 361.35pt>
 File: report_files/figure-latex/DriversKilled-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/DriversKilled-1.pdf>
 Package luatex.def Info: report_files/figure-latex/DriversKilled-1.pdf  used on
@@ -1720,59 +1719,27 @@ LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 10.51207pt on input line 313.
 LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
 (Font)              scaled to size 10.51207pt on input line 313.
-<report_files/figure-latex/FrontKilled-1.pdf, id=26, 578.16pt x 361.35pt>
+<report_files/figure-latex/FrontKilled-1.pdf, id=14, 578.16pt x 361.35pt>
 File: report_files/figure-latex/FrontKilled-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/FrontKilled-1.pdf>
 Package luatex.def Info: report_files/figure-latex/FrontKilled-1.pdf  used on i
 nput line 318.
 (luatex.def)             Requested size: 455.24165pt x 284.52603pt.
-<report_files/figure-latex/RearKilled-1.pdf, id=27, 578.16pt x 361.35pt>
+<report_files/figure-latex/RearKilled-1.pdf, id=15, 578.16pt x 361.35pt>
 File: report_files/figure-latex/RearKilled-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/RearKilled-1.pdf>
 Package luatex.def Info: report_files/figure-latex/RearKilled-1.pdf  used on in
 put line 324.
 (luatex.def)             Requested size: 455.24165pt x 284.52603pt.
-<report_files/figure-latex/VanKilled-1.pdf, id=28, 578.16pt x 361.35pt>
+<report_files/figure-latex/VanKilled-1.pdf, id=16, 578.16pt x 361.35pt>
 File: report_files/figure-latex/VanKilled-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/VanKilled-1.pdf>
 Package luatex.def Info: report_files/figure-latex/VanKilled-1.pdf  used on inp
 ut line 330.
 (luatex.def)             Requested size: 455.24165pt x 284.52603pt.
 [2<./report_files/figure-latex/DriversKilled-1.pdf>] [3<./report_files/figure-la
-tex/FrontKilled-1.pdf><./report_files/figure-latex/RearKilled-1.pdf>]
-
-LaTeX Warning: Reference `fig:FrontKilled' on page 4 undefined on input line 40
-2.
-
-
-LaTeX Warning: Reference `fig:VanKilled' on page 4 undefined on input line 402.
-
-
-[4<./report_files/figure-latex/VanKilled-1.pdf>]
-
-LaTeX Warning: Reference `fig:DriversKilled' on page 5 undefined on input line 
-404.
-
-
-LaTeX Warning: Reference `fig:RearKilled' on page 5 undefined on input line 406
-.
-
-
-LaTeX Warning: Reference `tab:DriverTable' on page 5 undefined on input line 40
-8.
-
-
-LaTeX Warning: Reference `tab:RearTable' on page 5 undefined on input line 408.
-
-
-
-LaTeX Warning: Reference `tab:FrontTable' on page 5 undefined on input line 408
-.
-
-
-LaTeX Warning: Reference `tab:VanTable' on page 5 undefined on input line 408.
-
-[5]
+tex/FrontKilled-1.pdf><./report_files/figure-latex/RearKilled-1.pdf>] [4<./repor
+t_files/figure-latex/VanKilled-1.pdf>] [5]
 LaTeX Font Info:    Trying to load font information for TS1+mdbch on input line
  419.
 (/Users/Y.W/Library/TinyTeX/texmf-dist/tex/latex/mathdesign/mdbch/ts1mdbch.fd
@@ -1781,12 +1748,9 @@ File: ts1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for TS1/mdbch.
 LaTeX Font Info:    Font shape `TS1/mdbch/m/n' will be
 (Font)              scaled to size 10.51207pt on input line 419.
 
-LaTeX Warning: Reference `tab:mytables' on page 6 undefined on input line 453.
-
-
 LaTeX Warning: Citation '10' on page 6 undefined on input line 466.
 
-<report_files/figure-latex/myggpair-1.pdf, id=89, 578.16pt x 361.35pt>
+<report_files/figure-latex/myggpair-1.pdf, id=87, 578.16pt x 361.35pt>
 File: report_files/figure-latex/myggpair-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/myggpair-1.pdf>
 Package luatex.def Info: report_files/figure-latex/myggpair-1.pdf  used on inpu
@@ -1795,13 +1759,10 @@ t line 470.
 [6
 
 ]
-
-LaTeX Warning: Reference `fig:myggpair' on page 7 undefined on input line 479.
-
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 9.24173pt on input line 489.
 [7<./report_files/figure-latex/myggpair-1.pdf>] [8]
-<report_files/figure-latex/redsduals-1.pdf, id=114, 578.16pt x 361.35pt>
+<report_files/figure-latex/redsduals-1.pdf, id=118, 578.16pt x 361.35pt>
 File: report_files/figure-latex/redsduals-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/redsduals-1.pdf>
 Package luatex.def Info: report_files/figure-latex/redsduals-1.pdf  used on inp
@@ -1810,11 +1771,7 @@ ut line 522.
 
 LaTeX Warning: Citation '11' on page 9 undefined on input line 526.
 
-
-LaTeX Warning: Reference `fig:redsduals' on page 9 undefined on input line 528.
-
-
-<report_files/figure-latex/figureE-1.pdf, id=115, 578.16pt x 361.35pt>
+<report_files/figure-latex/figureE-1.pdf, id=120, 578.16pt x 361.35pt>
 File: report_files/figure-latex/figureE-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/figureE-1.pdf>
 Package luatex.def Info: report_files/figure-latex/figureE-1.pdf  used on input
@@ -1831,7 +1788,7 @@ LaTeX Warning: Citation 'richens2000condoms' on page 10 undefined on input line
  558.
 
 [10<./report_files/figure-latex/figureE-1.pdf>]
-<report_files/figure-latex/Bluebox-1.pdf, id=146, 578.16pt x 361.35pt>
+<report_files/figure-latex/Bluebox-1.pdf, id=152, 578.16pt x 361.35pt>
 File: report_files/figure-latex/Bluebox-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/Bluebox-1.pdf>
 Package luatex.def Info: report_files/figure-latex/Bluebox-1.pdf  used on input
@@ -1851,7 +1808,7 @@ LaTeX Warning: Reference `tab:Beforelawsub' on page 12 undefined on input line
 LaTeX Warning: Reference `tab:Afterlawsub' on page 12 undefined on input line 6
 02.
 
-<report_files/figure-latex/season-1.pdf, id=156, 578.16pt x 361.35pt>
+<report_files/figure-latex/season-1.pdf, id=162, 578.16pt x 361.35pt>
 File: report_files/figure-latex/season-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/season-1.pdf>
 Package luatex.def Info: report_files/figure-latex/season-1.pdf  used on input 
@@ -1880,7 +1837,7 @@ Package rerunfilecheck Warning: File `report.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: EE59DFC090F91F3B78C605132DEA9680;654
+(rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  2746F99BDC2329E9B46FC12E0226FA7B;1731.
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -1893,14 +1850,14 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33210 strings out of 478296
+ 33196 strings out of 478296
  100000,1648299 words of node,token memory allocated
  771 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 22 kern, 1 glyph, 24 attribute, 77 glue_spe
 c, 24 attribute_list, 1 write nodes
-   avail lists: 1:1,2:676,3:958,4:94,5:115,6:55,7:3431,8:17,9:470,10:17,11:183
- 51802 multiletter control sequences out of 65536+600000
- 232 fonts using 19121495 bytes
+   avail lists: 1:1,2:676,3:958,4:101,5:115,6:55,7:3431,8:21,9:470,10:17,11:183
+ 51798 multiletter control sequences out of 65536+600000
+ 232 fonts using 19121483 bytes
  87i,14n,131p,738b,807s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/Users/Y.W/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}
 ! error:  (type 1): cannot find encoding file 'texnansi.enc' for reading

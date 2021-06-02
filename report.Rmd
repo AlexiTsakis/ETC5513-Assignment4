@@ -42,6 +42,7 @@ output:
 ```{r , echo = FALSE, include=FALSE, message = FALSE, warning = FALSE}
 # Libraries
 set.seed(96024)
+
 library(tidyverse)
 library(readr)
 library(kableExtra)
@@ -187,6 +188,7 @@ seatbelts%>%
 Seatbelts%>%as.data.frame()->seatbelts
 seatbelts%>%
   mutate(law=as.factor(law))->Seatbelt
+
 fit<-lm(DriversKilled ~ ., data=Seatbelt)
 summary(fit)
 ```
@@ -213,7 +215,6 @@ In order to analyze the residuals, I use the **broom** package(\cite{11}).
 From the figure \@ref(fig:redsduals), it indicates that the residuals does not include obvious pattern of the variables since the residuals are randomly around the red line. It means that the model can capture most information about the response variable DriversKilled. But we can see that the tail at the beginning and end is not like a straight since the observations are not enough at the end and the beginning.
 
 {Section 3}
-
 
 ```{r data, echo = FALSE, message = FALSE, warning = FALSE}
 data(Seatbelts)
@@ -261,7 +262,6 @@ From the figure \@ref(fig:Bluebox), it is clear that the range of monthly deaths
 ```{r Beforelawsub, echo = FALSE, message = FALSE, warning = FALSE}
 Beforelawsub <-filter(Seatbelts, law ==0)
 summary(Beforelawsub)
-
 ```
 
 ```{r Afterlawsub, echo = FALSE, message = FALSE, warning = FALSE}
@@ -280,7 +280,6 @@ We can see that the law is effective in helping drivers stay away from death, si
 ```{r season, echo = FALSE, message = FALSE, warning = FALSE}
  ggplot(data = Seatbelts) +
   geom_point(mapping = aes(x = Month, y = DriversKilled, col=law))-> G1
-
  ggplot(data = Seatbelts) +
   geom_point(mapping = aes(x = Month, y = front, col=law))-> G2
  
@@ -292,4 +291,4 @@ From the figure \@ref(fig:season), there seems to be some seasonal correlation b
 
 - it is quite obvious that, there is more driver deaths and front deaths in autumn/winter than in spring/summer, somehow it is with seasonal effect. 
 
-- based on the color plots, it can be seem that the number of driver deaths is the lowest after the front seatbelt legislation been introduced. Snow, rain, fog, and other bad weather is the main reason, not only affect the driver's vision, but also increase the braking distance. 
+- based on the color plots, it can be seem that the number of driver deaths is the lowest after the front seatbelt legislation been introduced. Snow, rain, fog, and other bad weather is the main reason, not only affect the driver's vision, but also increase the braking distance.

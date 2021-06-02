@@ -303,9 +303,49 @@
 \begin{document}
 \titlepage
 
-\{Section 1\}
+\clearpage
 
-\#Compulsory Seatbelts 1983
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+The seatbelts dataset (\cite{seatbelts}) is a collection of monthly data from 1968 to 1984 collected by the Department of Transportation. The dataset includes data on number of deaths - for car drivers, front seat passengers, rear seat passengers and van drivers - as well as distance driven, petrol price and a dummy variable that denotes whether the law mandating that front seat passengers and drivers wear seatbelts was in effect. In this report, we aim to use this data to provide insight into the following questions
+
+\begin{itemize}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi})}
+  \tightlist
+  \item
+    Did seatbelts have a notable effect on number of deaths?
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    Is there any relationship between driver deaths and the other variables in this dataset?
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi})}
+  \setcounter{enumi}{2}
+  \tightlist
+  \item
+    What is the trend and trough of driver deaths?
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi})}
+  \setcounter{enumi}{3}
+  \tightlist
+  \item
+    Is there any seasonality to number of deaths?
+  \end{enumerate}
+\end{itemize}
+
+\hypertarget{compulsory-seatbelts-1983---alexi-tsakis}{%
+\section{Compulsory Seatbelts 1983 - Alexi Tsakis}\label{compulsory-seatbelts-1983---alexi-tsakis}}
 
 \begin{figure}
 \centering
@@ -393,7 +433,7 @@ law & Van\_Average\\
 
 In this section we look at the effect of seatbelts on driver deaths in the UK. Front seatbelts were compulsory on all new cars registered in the UK from 1968, however it was not required for them to be worn until 1983. In this section, we will answer the question - did mandatory wearing of frontrow seatbelts prevent deaths for drivers and passengers?
 
-First, to answer if any relationships shown are causation and not simply correlation, we ask - why do seatbelts prevent deaths? According to the National Highway Traffic Safety Administration, the primary reasons why seatbelts prevent death is that ``Buckling up helps keep you safe and secure inside your vehicle, whereas not buckling up can result in being totally ejected from the vehicle in a crash, which is almost always deadly.'' (NHTSA 2021)
+First, to answer if any relationships shown are causation and not simply correlation, we ask - why do seatbelts prevent deaths? According to the National Highway Traffic Safety Administration, the primary reasons why seatbelts prevent death is that ``Buckling up helps keep you safe and secure inside your vehicle, whereas not buckling up can result in being totally ejected from the vehicle in a crash, which is almost always deadly.'' (\cite{NHTSA})
 
 These scenarios are referred to as ``secondary collisions'' - i.e.~a crash event that results from the impact of an initial collison, such as ejection from a vehicle, or even a high speed impact with objects inside the vehicle.
 
@@ -401,7 +441,7 @@ Now that we understand the theory behind the impact of seatbelts on preventing d
 
 There is a clear negative correlation between frontrow passengers and light good vehicle drivers killed since the introduction of the law (figure \ref{fig:FrontKilled}, figure \ref{fig:VanKilled}), data from the introduction of the law shown in blue).
 
-There is also a clear reduction in number of drivers killed (figure \ref{fig:DriversKilled}) since the introduction of compulsory seatbelts - the lack of change since the introduction of the law, but the large change since approximately 1973 can be described as " drivers that are least likely to use seat belts might be those that are more likely to be involved in an accident" (Cohen, A. and Einav. L 2003) - i.e.~that careful drivers adopted seatbelts already without the law, and those likely to get involved in accidents would be unlikely to wear seatbelts even with the law in place.
+There is also a clear reduction in number of drivers killed (figure \ref{fig:DriversKilled}) since the introduction of compulsory seatbelts - the lack of change since the introduction of the law, but the large change since approximately 1973 can be described as " drivers that are least likely to use seat belts might be those that are more likely to be involved in an accident" (\cite{Cohen}) - i.e.~that careful drivers adopted seatbelts already without the law, and those likely to get involved in accidents would be unlikely to wear seatbelts even with the law in place.
 
 There is little change in number of rear seat passengers killed (figure \ref{fig:RearKilled}) - this is because the regulations and law were only for front seat seatbelts, and not backseat seatbelts, suggesting the total number of accidents didn't change.
 
@@ -409,10 +449,8 @@ We can also see this in tabular format, so it is easier to see the effect of the
 
 \clearpage
 
-\{Section 2\}
-
-\hypertarget{reaseach-questions}{%
-\section{Reaseach Questions}\label{reaseach-questions}}
+\hypertarget{reseach-questions---siyi-li}{%
+\section{Reseach Questions - Siyi Li}\label{reseach-questions---siyi-li}}
 
 \begin{itemize}
 \item
@@ -527,10 +565,8 @@ In order to analyze the residuals, I use the \textbf{broom} package(\cite{11}).
 
 From the figure \ref{fig:redsduals}, it indicates that the residuals does not include obvious pattern of the variables since the residuals are randomly around the red line. It means that the model can capture most information about the response variable DriversKilled. But we can see that the tail at the beginning and end is not like a straight since the observations are not enough at the end and the beginning.
 
-\{Section 3\}
-
-\hypertarget{research-questions}{%
-\section{Research Questions}\label{research-questions}}
+\hypertarget{research-questions---yusen-wang}{%
+\section{Research Questions - Yusen Wang}\label{research-questions---yusen-wang}}
 
 \begin{itemize}
 \item
@@ -616,10 +652,38 @@ From the figure \ref{fig:season}, there seems to be some seasonal correlation be
 
 \begin{itemize}
 \item
-  it is quite obvious that, there is more driver deaths and front deaths in autumn/winter than in spring/summer, somehow it is with seasonal effect.
+  it is quite obvious that, there is more driver deaths and front deaths in autumn/winter than in spring/summer, somehow it is with seasonal effect. Snow, rain, fog, and other bad weather is the main reason, not only affect the driver's vision, but also increase the braking distance.
 \item
-  based on the color plots, it can be seem that the number of driver deaths is the lowest after the front seatbelt legislation been introduced. Snow, rain, fog, and other bad weather is the main reason, not only affect the driver's vision, but also increase the braking distance.
+  based on the color plots, it can be seem that the number of driver deaths is the lowest after the front seatbelt legislation been introduced.
 \end{itemize}
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+Based on the analysis done in this report, our findings were as follows
+
+\begin{itemize}
+\tightlist
+\item
+  The mandatory seatbelt production law, as well as the mandatory seatbelt wearing law did have a statistically sigificant impact in reducing number of drivers, van drivers and front seat passengers killed. The laws slightly increased number of rear seat passengers killed, but not significantly so.
+\item
+  There is no relationship between DriversKilled and any other variable in the dataset except number of drivers.
+\item
+  The trough of drivers killed is after the seatbelt legislation was introduced.
+\item
+  There is more deaths in autumn and winter due to weather conditions.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{packages-used}{%
+\section{Packages used}\label{packages-used}}
+
+\cite{1}
+\cite{2}
+\cite{3}
+\cite{4}
+\cite{9}
 
 \printbibliography
 

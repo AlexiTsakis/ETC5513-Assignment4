@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.6.3)  3 JUN 2021 19:28
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.6.3)  3 JUN 2021 23:28
  restricted system commands enabled.
 **report.tex
 (./report.tex
@@ -2031,7 +2031,7 @@ c, 33 attribute_list, 1 write, 2 pdf_action nodes
    avail lists: 1:1,2:1583,3:546,4:156,5:168,6:56,7:5065,8:58,9:1083,10:17,11:32
 0
  52180 multiletter control sequences out of 65536+600000
- 232 fonts using 13880547 bytes
+ 232 fonts using 13880543 bytes
  87i,14n,131p,738b,1238s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{
 c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/ly1/texnansi.e
@@ -2045,7 +2045,7 @@ AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/bera/fvsb8a.pfb><c:/Users/
 61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/bera/fvsr8a.pfb><c:/
 Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/mathdesign/mdb
 ch/md-chr8t.pfb>
-Output written on report.pdf (14 pages, 7925400 bytes).
+Output written on report.pdf (14 pages, 7925737 bytes).
 
 PDF statistics: 311 PDF objects out of 1000 (max. 8388607)
  257 compressed objects within 3 object streams

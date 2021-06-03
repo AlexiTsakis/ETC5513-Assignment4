@@ -47,6 +47,7 @@ library(tidyverse)
 library(readr)
 library(kableExtra)
 library(bookdown)
+library(plotly)
 ```
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
@@ -71,19 +72,19 @@ Seatbelts_data = data.frame(as.matrix(Seatbelts),date=time(Seatbelts))
 ```
 
 ```{r DriversKilled, fig.cap = "Drivers killed in accidents over time", echo = FALSE, message = FALSE, warning = FALSE}
-ggplot(data=Seatbelts_data, aes(x=date,y=DriversKilled,col=law))+geom_line()+geom_smooth()
+ggplotly(ggplot(data=Seatbelts_data, aes(x=date,y=DriversKilled,col=law))+geom_line()+geom_smooth()+geom_hline(yintercept = 125,linetype="dashed",colour="red")+geom_hline(yintercept = 100,linetype="dashed",colour="blue")+annotate(geom="text",x=1972,y=98,label="law mean")+annotate(geom="text",x=1972,y=127,label="no law mean"))
 ```
 
 ```{r FrontKilled, fig.cap = "Frontseat passengers killed in accidents over time", echo = FALSE, message = FALSE, warning = FALSE}
-ggplot(data=Seatbelts_data, aes(x=date,y=front,col=law))+geom_line()+geom_smooth()
+ggplotly(ggplot(data=Seatbelts_data, aes(x=date,y=front,col=law))+geom_line()+geom_smooth()+geom_hline(yintercept = 873,linetype="dashed",colour="red")+geom_hline(yintercept = 570,linetype="dashed",colour="blue")+annotate(geom="text",x=1972,y=550,label="law mean")+annotate(geom="text",x=1972,y=880,label="no law mean"))
 ```
 
 ```{r RearKilled, fig.cap = "Backseat passengers killed in accidents over time", echo = FALSE, message = FALSE, warning = FALSE}
-ggplot(data=Seatbelts_data, aes(x=date,y=rear,col=law))+geom_line()+geom_smooth()
+ggplotly(ggplot(data=Seatbelts_data, aes(x=date,y=rear,col=law))+geom_line()+geom_smooth()+geom_hline(yintercept = 400,linetype="dashed",colour="red")+geom_hline(yintercept = 407,linetype="dashed",colour="blue")+annotate(geom="text",x=1972,y=410,label="law mean")+annotate(geom="text",x=1972,y=395,label="no law mean"))
 ```
 
 ```{r VanKilled, fig.cap = "Light goods vehicle drivers killed in accidents over time", echo = FALSE, message = FALSE, warning = FALSE}
-ggplot(data=Seatbelts_data, aes(x=date,y=VanKilled,col=law))+geom_line()+geom_smooth()
+ggplotly(ggplot(data=Seatbelts_data, aes(x=date,y=VanKilled,col=law))+geom_line()+geom_smooth()+geom_hline(yintercept = 9.5,linetype="dashed",colour="red")+geom_hline(yintercept = 5.1,linetype="dashed",colour="blue")+annotate(geom="text",x=1972,y=4.8,label="law mean")+annotate(geom="text",x=1972,y=9.8,label="no law mean"))
 ```
 
 ```{r DriverTable, echo = FALSE, message = FALSE, warning = FALSE}

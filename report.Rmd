@@ -236,7 +236,7 @@ labels=month.abb), Seatbelts)
 # Data Analysis
 ## Analysis of trends in driverkilled before and after 1983
 
-```{r figureE, echo = FALSE, message = FALSE, warning = FALSE}
+```{r figureE, echo = FALSE, message = FALSE, warning = FALSE, fig.cap="Trend Lines"}
 selectdata <- Seatbelts %>% 
   select(DriversKilled, drivers, front, rear, Year)
 ggplot(data = selectdata) +
@@ -256,7 +256,7 @@ According to Figure \@ref(fig:figureE), as we can see:
 The reason is Successive UK governments proposed, but failed to deliver, seat belt legislation throughout the 1970s. Front seat belts were compulsory equipment on all new cars registered in the UK from 1968, although it did not become compulsory for them to be worn until 1983. (\cite{richens2000condoms}) \clearpage
 
 
-```{r Bluebox, echo = FALSE, message = FALSE, warning = FALSE}
+```{r Bluebox, echo = FALSE, message = FALSE, warning = FALSE, fig.cap="Law Introduction"}
 Bluebox <-ggplot(Seatbelts, aes(x=factor(law), y =DriversKilled)) +geom_boxplot(fill = "skyblue") +theme_grey()+ylab ("Monthly Driver Mortality")+xlab("Before and after law introduced")
 Bluebox
 ```
@@ -265,12 +265,16 @@ From the figure \@ref(fig:Bluebox), it is clear that the range of monthly deaths
 
 ```{r Beforelawsub, echo = FALSE, message = FALSE, warning = FALSE}
 Beforelawsub <-filter(Seatbelts, law ==0)
-summary(Beforelawsub)
+Beforelawsub %>%
+  summary() %>%
+  kable(caption="Before Law summary stats")
 ```
 
 ```{r Afterlawsub, echo = FALSE, message = FALSE, warning = FALSE}
 Afterlawsub <-filter(Seatbelts, law!=0)
-summary(Afterlawsub)
+Afterlawsub %>%
+  summary() %>%
+  kable(caption="After Law summary stats")
 ```
 
 From the tables \@ref(tab:Beforelawsub) and \@ref(tab:Afterlawsub) :
@@ -281,7 +285,7 @@ From the tables \@ref(tab:Beforelawsub) and \@ref(tab:Afterlawsub) :
 
 We can see that the law is effective in helping drivers stay away from death, since it is introduced on 31st January 1983.
 
-```{r season, echo = FALSE, message = FALSE, warning = FALSE}
+```{r season, echo = FALSE, message = FALSE, warning = FALSE, fig.cap="Seasonality"}
  ggplot(data = Seatbelts) +
   geom_point(mapping = aes(x = Month, y = DriversKilled, col=law))-> G1
  ggplot(data = Seatbelts) +

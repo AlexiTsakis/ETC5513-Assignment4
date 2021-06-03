@@ -581,7 +581,11 @@ From the figure \ref{fig:residuals}, it indicates that the residuals does not in
 \hypertarget{analysis-of-trends-in-driverkilled-before-and-after-1983}{%
 \subsection{Analysis of trends in driverkilled before and after 1983}\label{analysis-of-trends-in-driverkilled-before-and-after-1983}}
 
+\begin{figure}
+\centering
 \includegraphics{report_files/figure-latex/figureE-1.pdf}
+\caption{\label{fig:figureE}Trend Lines}
+\end{figure}
 
 According to Figure \ref{fig:figureE}, as we can see:
 
@@ -593,47 +597,63 @@ According to Figure \ref{fig:figureE}, as we can see:
 
 The reason is Successive UK governments proposed, but failed to deliver, seat belt legislation throughout the 1970s. Front seat belts were compulsory equipment on all new cars registered in the UK from 1968, although it did not become compulsory for them to be worn until 1983. (\cite{richens2000condoms}) \clearpage
 
+\begin{figure}
+\centering
 \includegraphics{report_files/figure-latex/Bluebox-1.pdf}
+\caption{\label{fig:Bluebox}Law Introduction}
+\end{figure}
 
 From the figure \ref{fig:Bluebox}, it is clear that the range of monthly deaths among drivers before the law was higher than after it was enacted.
 
-\begin{verbatim}
-##       Year          Month    DriversKilled      drivers         front       
-##  Min.   :1969   Jan    :15   Min.   : 79.0   Min.   :1309   Min.   : 567.0  
-##  1st Qu.:1972   Feb    :14   1st Qu.:108.0   1st Qu.:1511   1st Qu.: 767.0  
-##  Median :1976   Mar    :14   Median :121.0   Median :1653   Median : 860.0  
-##  Mean   :1976   Apr    :14   Mean   :125.9   Mean   :1718   Mean   : 873.5  
-##  3rd Qu.:1979   May    :14   3rd Qu.:140.0   3rd Qu.:1926   3rd Qu.: 986.0  
-##  Max.   :1983   Jun    :14   Max.   :198.0   Max.   :2654   Max.   :1299.0  
-##                 (Other):84                                                  
-##       rear            kms         PetrolPrice        VanKilled           law   
-##  Min.   :224.0   Min.   : 7685   Min.   :0.08118   Min.   : 2.000   Min.   :0  
-##  1st Qu.:344.0   1st Qu.:12387   1st Qu.:0.09078   1st Qu.: 7.000   1st Qu.:0  
-##  Median :401.0   Median :14455   Median :0.10273   Median :10.000   Median :0  
-##  Mean   :400.3   Mean   :14463   Mean   :0.10187   Mean   : 9.586   Mean   :0  
-##  3rd Qu.:454.0   3rd Qu.:16585   3rd Qu.:0.11132   3rd Qu.:13.000   3rd Qu.:0  
-##  Max.   :646.0   Max.   :21040   Max.   :0.13303   Max.   :17.000   Max.   :0  
-## 
-\end{verbatim}
+\begin{table}
 
-\begin{verbatim}
-##       Year          Month    DriversKilled      drivers         front      
-##  Min.   :1983   Feb    : 2   Min.   : 60.0   Min.   :1057   Min.   :426.0  
-##  1st Qu.:1983   Mar    : 2   1st Qu.: 85.0   1st Qu.:1171   1st Qu.:516.0  
-##  Median :1984   Apr    : 2   Median : 92.0   Median :1282   Median :585.0  
-##  Mean   :1984   May    : 2   Mean   :100.3   Mean   :1322   Mean   :571.0  
-##  3rd Qu.:1984   Jun    : 2   3rd Qu.:119.0   3rd Qu.:1464   3rd Qu.:629.5  
-##  Max.   :1984   Jul    : 2   Max.   :154.0   Max.   :1763   Max.   :721.0  
-##                 (Other):11                                                 
-##       rear            kms         PetrolPrice       VanKilled          law   
-##  Min.   :296.0   Min.   :15511   Min.   :0.1131   Min.   :2.000   Min.   :1  
-##  1st Qu.:347.0   1st Qu.:17971   1st Qu.:0.1148   1st Qu.:3.500   1st Qu.:1  
-##  Median :408.0   Median :19162   Median :0.1161   Median :5.000   Median :1  
-##  Mean   :407.7   Mean   :18890   Mean   :0.1165   Mean   :5.174   Mean   :1  
-##  3rd Qu.:471.5   3rd Qu.:19952   3rd Qu.:0.1180   3rd Qu.:7.000   3rd Qu.:1  
-##  Max.   :521.0   Max.   :21626   Max.   :0.1201   Max.   :8.000   Max.   :1  
-## 
-\end{verbatim}
+\caption{\label{tab:Beforelawsub}Before Law summary stats}
+\centering
+\begin{tabular}[t]{l|l|l|l|l|l|l|l|l|l|l}
+\hline
+  &      Year &     Month & DriversKilled &    drivers &     front &      rear &      kms &  PetrolPrice &   VanKilled &      law\\
+\hline
+ & Min.   :1969 & Jan    :15 & Min.   : 79.0 & Min.   :1309 & Min.   : 567.0 & Min.   :224.0 & Min.   : 7685 & Min.   :0.08118 & Min.   : 2.000 & Min.   :0\\
+\hline
+ & 1st Qu.:1972 & Feb    :14 & 1st Qu.:108.0 & 1st Qu.:1511 & 1st Qu.: 767.0 & 1st Qu.:344.0 & 1st Qu.:12387 & 1st Qu.:0.09078 & 1st Qu.: 7.000 & 1st Qu.:0\\
+\hline
+ & Median :1976 & Mar    :14 & Median :121.0 & Median :1653 & Median : 860.0 & Median :401.0 & Median :14455 & Median :0.10273 & Median :10.000 & Median :0\\
+\hline
+ & Mean   :1976 & Apr    :14 & Mean   :125.9 & Mean   :1718 & Mean   : 873.5 & Mean   :400.3 & Mean   :14463 & Mean   :0.10187 & Mean   : 9.586 & Mean   :0\\
+\hline
+ & 3rd Qu.:1979 & May    :14 & 3rd Qu.:140.0 & 3rd Qu.:1926 & 3rd Qu.: 986.0 & 3rd Qu.:454.0 & 3rd Qu.:16585 & 3rd Qu.:0.11132 & 3rd Qu.:13.000 & 3rd Qu.:0\\
+\hline
+ & Max.   :1983 & Jun    :14 & Max.   :198.0 & Max.   :2654 & Max.   :1299.0 & Max.   :646.0 & Max.   :21040 & Max.   :0.13303 & Max.   :17.000 & Max.   :0\\
+\hline
+ & NA & (Other):84 & NA & NA & NA & NA & NA & NA & NA & NA\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}
+
+\caption{\label{tab:Afterlawsub}After Law summary stats}
+\centering
+\begin{tabular}[t]{l|l|l|l|l|l|l|l|l|l|l}
+\hline
+  &      Year &     Month & DriversKilled &    drivers &     front &      rear &      kms &  PetrolPrice &   VanKilled &      law\\
+\hline
+ & Min.   :1983 & Feb    : 2 & Min.   : 60.0 & Min.   :1057 & Min.   :426.0 & Min.   :296.0 & Min.   :15511 & Min.   :0.1131 & Min.   :2.000 & Min.   :1\\
+\hline
+ & 1st Qu.:1983 & Mar    : 2 & 1st Qu.: 85.0 & 1st Qu.:1171 & 1st Qu.:516.0 & 1st Qu.:347.0 & 1st Qu.:17971 & 1st Qu.:0.1148 & 1st Qu.:3.500 & 1st Qu.:1\\
+\hline
+ & Median :1984 & Apr    : 2 & Median : 92.0 & Median :1282 & Median :585.0 & Median :408.0 & Median :19162 & Median :0.1161 & Median :5.000 & Median :1\\
+\hline
+ & Mean   :1984 & May    : 2 & Mean   :100.3 & Mean   :1322 & Mean   :571.0 & Mean   :407.7 & Mean   :18890 & Mean   :0.1165 & Mean   :5.174 & Mean   :1\\
+\hline
+ & 3rd Qu.:1984 & Jun    : 2 & 3rd Qu.:119.0 & 3rd Qu.:1464 & 3rd Qu.:629.5 & 3rd Qu.:471.5 & 3rd Qu.:19952 & 3rd Qu.:0.1180 & 3rd Qu.:7.000 & 3rd Qu.:1\\
+\hline
+ & Max.   :1984 & Jul    : 2 & Max.   :154.0 & Max.   :1763 & Max.   :721.0 & Max.   :521.0 & Max.   :21626 & Max.   :0.1201 & Max.   :8.000 & Max.   :1\\
+\hline
+ & NA & (Other):11 & NA & NA & NA & NA & NA & NA & NA & NA\\
+\hline
+\end{tabular}
+\end{table}
 
 From the tables \ref{tab:Beforelawsub} and \ref{tab:Afterlawsub} :
 
@@ -646,7 +666,11 @@ From the tables \ref{tab:Beforelawsub} and \ref{tab:Afterlawsub} :
 
 We can see that the law is effective in helping drivers stay away from death, since it is introduced on 31st January 1983.
 
+\begin{figure}
+\centering
 \includegraphics{report_files/figure-latex/season-1.pdf}
+\caption{\label{fig:season}Seasonality}
+\end{figure}
 
 From the figure \ref{fig:season}, there seems to be some seasonal correlation between driver deaths:
 

@@ -1,20 +1,20 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.5.20)  2 JUN 2021 20:22
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.6.3)  3 JUN 2021 19:28
  restricted system commands enabled.
 **report.tex
 (./report.tex
-LaTeX2e <2020-10-01> patch level 4
-Lua module: luaotfload 2021-01-08 3.17 Lua based OpenType font support
-Lua module: lualibs 2020-12-30 2.73 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2020-12-30 2.73 ConTeXt Lua libraries -- extended c
+LaTeX2e <2021-06-01>
+Lua module: luaotfload 2021-05-21 3.18 Lua based OpenType font support
+Lua module: lualibs 2021-05-20 2.74 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2021-05-20 2.74 ConTeXt Lua libraries -- extended c
 ollection.
 luaotfload | conf : Root cache directory is "C:/Users/61477/AppData/Roaming/Tiny
 TeX/texmf-var/luatex-cache/generic/names".
-luaotfload | init : Loading fontloader "fontloader-2021-01-07.lua" from kpse-res
+luaotfload | init : Loading fontloader "fontloader-2021-05-20.lua" from kpse-res
 olved path "c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/luatex/luaotfl
-oad/fontloader-2021-01-07.lua".
+oad/fontloader-2021-05-20.lua".
 Lua-only attribute luaotfload@noligature = 1
 Lua-only attribute luaotfload@syllabe = 2
-luaotfload | init : Context OpenType loader version 0x1.8e76c8b439581p+1
+luaotfload | init : Context OpenType loader version 3.116
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' at position 1 in `glyph_stream_provider'.
@@ -30,6 +30,7 @@ Inserting `luaotfload.harf.finalize_hlist' at position 2 in `hpack_filter'.
 Inserting `luaotfload.cleanup_files' at position 1 in `wrapup_run'.
 Inserting `luaotfload.harf.finalize_unicode' at position 1 in `finish_pdffile'.
 Inserting `luaotfload.glyphinfo' at position 1 in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 4
 Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
 font'.
 Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_fon
@@ -42,21 +43,22 @@ Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
-. L3 programming layer <2021-05-11> (c:/Users/61477/AppData/Roaming/TinyTeX/tex
-mf-dist/tex/latex/base/article.cls
-Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+. L3 programming layer <2021-06-01>
+Inserting `tracingstacklevels' at position 1 in `input_level_string'. (c:/Users
+/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+File: size11.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
 luaotfload | db : Font names database loaded from C:/Users/61477/AppData/Roaming
 /TinyTeX/texmf-var/luatex-cache/generic/names/luaotfload-names.luc)
-\c@part=\count175
-\c@section=\count176
-\c@subsection=\count177
-\c@subsubsection=\count178
-\c@paragraph=\count179
-\c@subparagraph=\count180
-\c@figure=\count181
-\c@table=\count182
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
@@ -102,7 +104,7 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.
 sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks15
+\@emptytoks=\toks16
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
@@ -111,7 +113,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.st
 y
-Package: amsmath 2020/09/23 v2.17i AMS math features
+Package: amsmath 2021/04/20 v2.17j AMS math features
 \@mathmargin=\skip49
 For additional information on amsmath, use the `?' option.
 
@@ -121,7 +123,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
+\@emptytoks=\toks17
 \ex@=\dimen139
 ))
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -131,41 +133,41 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count183
+\inf@bad=\count187
 LaTeX Info: Redefining \frac on input line 236.
-\uproot@=\count184
-\leftroot@=\count185
+\uproot@=\count188
+\leftroot@=\count189
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count186
-\DOTSCASE@=\count187
+\classnum@=\count190
+\DOTSCASE@=\count191
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box47
-\strutbox@=\box48
+\Mathstrutbox@=\box50
+\strutbox@=\box51
 \big@size=\dimen141
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count188
-\c@MaxMatrixCols=\count189
+\macc@depth=\count192
+\c@MaxMatrixCols=\count193
 \dotsspace@=\muskip16
-\c@parentequation=\count190
-\dspbrk@lvl=\count191
-\tag@help=\toks17
-\row@=\count192
-\column@=\count193
-\maxfields@=\count194
-\andhelp@=\toks18
+\c@parentequation=\count194
+\dspbrk@lvl=\count195
+\tag@help=\toks18
+\row@=\count196
+\column@=\count197
+\maxfields@=\count198
+\andhelp@=\toks19
 \eqnshift@=\dimen142
 \alignsep@=\dimen143
 \tagshift@=\dimen144
 \tagwidth@=\dimen145
 \totwidth@=\dimen146
 \lineht@=\dimen147
-\@envbody=\toks19
+\@envbody=\toks20
 \multlinegap=\skip50
 \multlinetaggap=\skip51
-\mathdisplay@stack=\toks20
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
@@ -192,13 +194,13 @@ Already applied: [0000/00/00] Old fixltx2e package on input line 53.
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unico
 de-math.sty
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2021-05-11 L3 programming layer (loader) 
+Package: expl3 2021-06-01 L3 programming layer (loader) 
 
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backen
 d-luatex.def
 File: l3backend-luatex.def 2021-05-07 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count195
-\l__pdf_internal_box=\box49
+\l__color_backend_stack_int=\count199
+\l__pdf_internal_box=\box52
 ))
 Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
 
@@ -209,13 +211,11 @@ aTeX
 
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/
 xparse.sty
-(c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/
-xparse-2020-10-01.sty
-(c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/
-xparse-generic.tex)))
+Package: xparse 2021-06-01 L3 Experimental document command parser
+)
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2
 e/l3keys2e.sty
-Package: l3keys2e 2021-05-07 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2021-06-01 LaTeX2e option processing using LaTeX3 keys
 )
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.
 sty
@@ -225,27 +225,27 @@ Lua module: fontspec 2020/02/21 2.7i Font selection for XeLaTeX and LuaLaTeX
 luatex.sty
 Package: fontspec-luatex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaT
 eX
-\l__fontspec_script_int=\count196
-\l__fontspec_language_int=\count197
-\l__fontspec_strnum_int=\count198
-\l__fontspec_tmp_int=\count199
-\l__fontspec_tmpa_int=\count266
-\l__fontspec_tmpb_int=\count267
-\l__fontspec_tmpc_int=\count268
-\l__fontspec_em_int=\count269
-\l__fontspec_emdef_int=\count270
-\l__fontspec_strong_int=\count271
-\l__fontspec_strongdef_int=\count272
+\l__fontspec_script_int=\count266
+\l__fontspec_language_int=\count267
+\l__fontspec_strnum_int=\count268
+\l__fontspec_tmp_int=\count269
+\l__fontspec_tmpa_int=\count270
+\l__fontspec_tmpb_int=\count271
+\l__fontspec_tmpc_int=\count272
+\l__fontspec_em_int=\count273
+\l__fontspec_emdef_int=\count274
+\l__fontspec_strong_int=\count275
+\l__fontspec_strongdef_int=\count276
 \l__fontspec_tmpa_dim=\dimen148
 \l__fontspec_tmpb_dim=\dimen149
 \l__fontspec_tmpc_dim=\dimen150
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.
 cfg))) (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm
 .sty
-Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
@@ -258,13 +258,13 @@ Package: lualatex-math 2020/09/25 v1.9 Patches for mathematics typesetting with
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.
 sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count273
+\etb@tempcnta=\count277
 )
 Lua module: lualatex-math 2013/08/03 1.3 Patches for mathematics typesetting wit
 h LuaLaTeX)
-\g__um_fam_int=\count274
-\g__um_fonts_used_int=\count275
-\l__um_primecount_int=\count276
+\g__um_fam_int=\count278
+\g__um_fonts_used_int=\count279
+\l__um_primecount_int=\count280
 \g__um_primekern_muskip=\muskip17
 
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unico
@@ -276,14 +276,14 @@ Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.st
 y
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks21
+\KV@toks@=\toks22
 )
-\MT@toks=\toks22
-\MT@count=\count277
+\MT@toks=\toks23
+\MT@count=\count281
 LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen151
 LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
-\MT@listname@count=\count278
+\MT@listname@count=\count282
 
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtyp
 e-luatex.def
@@ -320,7 +320,7 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-\pdftexcmds@toks=\toks23
+\pdftexcmds@toks=\toks24
 )
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetk
 eys.sty
@@ -351,8 +351,8 @@ s.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen152
-\Hy@linkcounter=\count279
-\Hy@pagecounter=\count280
+\Hy@linkcounter=\count283
+\Hy@pagecounter=\count284
 
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.de
 f
@@ -371,7 +371,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 s.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count281
+\Hy@SavedSpaceFactor=\count285
 
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
@@ -384,7 +384,7 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count282
+\c@Hy@tempcnt=\count286
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -401,7 +401,7 @@ tcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count283
+\Fld@menulength=\count287
 \Field@Width=\dimen154
 \Fld@charsize=\dimen155
 Package hyperref Info: Hyper figures OFF on input line 6075.
@@ -416,13 +416,12 @@ LaTeX Info: Redefining \pageref on input line 6149.
 
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.
 sty
-Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
-ge
-with kernel methods
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
 )
-\Hy@abspage=\count284
-\c@Item=\count285
-\c@Hfootnote=\count286
+\Hy@abspage=\count288
+\c@Item=\count289
+\c@Hfootnote=\count290
 )
 Package hyperref Info: Driver (autodetected): hluatex.
 
@@ -441,8 +440,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count287
-\c@bookmark@seq@number=\count288
+\Fld@listcount=\count291
+\c@bookmark@seq@number=\count292
 
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rer
 unfilecheck.sty
@@ -466,9 +465,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count289
-\Gm@cntv=\count290
-\c@Gm@tempcnt=\count291
+\Gm@cnth=\count293
+\Gm@cntv=\count294
+\c@Gm@tempcnt=\count295
 \Gm@bindingoffset=\dimen156
 \Gm@wd@mp=\dimen157
 \Gm@odd@mp=\dimen158
@@ -477,61 +476,61 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen161
 \Gm@layouthoffset=\dimen162
 \Gm@layoutvoffset=\dimen163
-\Gm@dimlist=\toks24
+\Gm@dimlist=\toks25
 )
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.
 sty
 Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count292
+\lrq@indent=\count296
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count293
-\c@listtotal=\count294
-\c@listcount=\count295
-\c@liststart=\count296
-\c@liststop=\count297
-\c@citecount=\count298
-\c@citetotal=\count299
-\c@multicitecount=\count300
-\c@multicitetotal=\count301
-\c@instcount=\count302
-\c@maxnames=\count303
-\c@minnames=\count304
-\c@maxitems=\count305
-\c@minitems=\count306
-\c@citecounter=\count307
-\c@maxcitecounter=\count308
-\c@savedcitecounter=\count309
-\c@uniquelist=\count310
-\c@uniquename=\count311
-\c@refsection=\count312
-\c@refsegment=\count313
-\c@maxextratitle=\count314
-\c@maxextratitleyear=\count315
-\c@maxextraname=\count316
-\c@maxextradate=\count317
-\c@maxextraalpha=\count318
-\c@abbrvpenalty=\count319
-\c@highnamepenalty=\count320
-\c@lownamepenalty=\count321
-\c@maxparens=\count322
-\c@parenlevel=\count323
-\blx@tempcnta=\count324
-\blx@tempcntb=\count325
-\blx@tempcntc=\count326
-\blx@maxsection=\count327
-\blx@maxsegment@0=\count328
-\blx@notetype=\count329
-\blx@parenlevel@text=\count330
-\blx@parenlevel@foot=\count331
-\blx@sectionciteorder@0=\count332
-\blx@entrysetcounter=\count333
-\blx@biblioinstance=\count334
+\c@tabx@nest=\count297
+\c@listtotal=\count298
+\c@listcount=\count299
+\c@liststart=\count300
+\c@liststop=\count301
+\c@citecount=\count302
+\c@citetotal=\count303
+\c@multicitecount=\count304
+\c@multicitetotal=\count305
+\c@instcount=\count306
+\c@maxnames=\count307
+\c@minnames=\count308
+\c@maxitems=\count309
+\c@minitems=\count310
+\c@citecounter=\count311
+\c@maxcitecounter=\count312
+\c@savedcitecounter=\count313
+\c@uniquelist=\count314
+\c@uniquename=\count315
+\c@refsection=\count316
+\c@refsegment=\count317
+\c@maxextratitle=\count318
+\c@maxextratitleyear=\count319
+\c@maxextraname=\count320
+\c@maxextradate=\count321
+\c@maxextraalpha=\count322
+\c@abbrvpenalty=\count323
+\c@highnamepenalty=\count324
+\c@lownamepenalty=\count325
+\c@maxparens=\count326
+\c@parenlevel=\count327
+\blx@tempcnta=\count328
+\blx@tempcntb=\count329
+\blx@tempcntc=\count330
+\blx@maxsection=\count331
+\blx@maxsegment@0=\count332
+\blx@notetype=\count333
+\blx@parenlevel@text=\count334
+\blx@parenlevel@foot=\count335
+\blx@sectionciteorder@0=\count336
+\blx@entrysetcounter=\count337
+\blx@biblioinstance=\count338
 \labelnumberwidth=\skip54
 \labelalphawidth=\skip55
 \biblabelsep=\skip56
@@ -543,9 +542,9 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language2
-\c@mincomprange=\count335
-\c@maxcomprange=\count336
-\c@mincompwidth=\count337
+\c@mincomprange=\count339
+\c@maxcomprange=\count340
+\c@mincompwidth=\count341
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -557,74 +556,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count338
-\c@savedafterword=\count339
-\c@annotator=\count340
-\c@savedannotator=\count341
-\c@author=\count342
-\c@savedauthor=\count343
-\c@bookauthor=\count344
-\c@savedbookauthor=\count345
-\c@commentator=\count346
-\c@savedcommentator=\count347
-\c@editor=\count348
-\c@savededitor=\count349
-\c@editora=\count350
-\c@savededitora=\count351
-\c@editorb=\count352
-\c@savededitorb=\count353
-\c@editorc=\count354
-\c@savededitorc=\count355
-\c@foreword=\count356
-\c@savedforeword=\count357
-\c@holder=\count358
-\c@savedholder=\count359
-\c@introduction=\count360
-\c@savedintroduction=\count361
-\c@namea=\count362
-\c@savednamea=\count363
-\c@nameb=\count364
-\c@savednameb=\count365
-\c@namec=\count366
-\c@savednamec=\count367
-\c@translator=\count368
-\c@savedtranslator=\count369
-\c@shortauthor=\count370
-\c@savedshortauthor=\count371
-\c@shorteditor=\count372
-\c@savedshorteditor=\count373
-\c@labelname=\count374
-\c@savedlabelname=\count375
-\c@institution=\count376
-\c@savedinstitution=\count377
-\c@lista=\count378
-\c@savedlista=\count379
-\c@listb=\count380
-\c@savedlistb=\count381
-\c@listc=\count382
-\c@savedlistc=\count383
-\c@listd=\count384
-\c@savedlistd=\count385
-\c@liste=\count386
-\c@savedliste=\count387
-\c@listf=\count388
-\c@savedlistf=\count389
-\c@location=\count390
-\c@savedlocation=\count391
-\c@organization=\count392
-\c@savedorganization=\count393
-\c@origlocation=\count394
-\c@savedoriglocation=\count395
-\c@origpublisher=\count396
-\c@savedorigpublisher=\count397
-\c@publisher=\count398
-\c@savedpublisher=\count399
-\c@language=\count400
-\c@savedlanguage=\count401
-\c@origlanguage=\count402
-\c@savedoriglanguage=\count403
-\c@pageref=\count404
-\c@savedpageref=\count405
+\c@afterword=\count342
+\c@savedafterword=\count343
+\c@annotator=\count344
+\c@savedannotator=\count345
+\c@author=\count346
+\c@savedauthor=\count347
+\c@bookauthor=\count348
+\c@savedbookauthor=\count349
+\c@commentator=\count350
+\c@savedcommentator=\count351
+\c@editor=\count352
+\c@savededitor=\count353
+\c@editora=\count354
+\c@savededitora=\count355
+\c@editorb=\count356
+\c@savededitorb=\count357
+\c@editorc=\count358
+\c@savededitorc=\count359
+\c@foreword=\count360
+\c@savedforeword=\count361
+\c@holder=\count362
+\c@savedholder=\count363
+\c@introduction=\count364
+\c@savedintroduction=\count365
+\c@namea=\count366
+\c@savednamea=\count367
+\c@nameb=\count368
+\c@savednameb=\count369
+\c@namec=\count370
+\c@savednamec=\count371
+\c@translator=\count372
+\c@savedtranslator=\count373
+\c@shortauthor=\count374
+\c@savedshortauthor=\count375
+\c@shorteditor=\count376
+\c@savedshorteditor=\count377
+\c@labelname=\count378
+\c@savedlabelname=\count379
+\c@institution=\count380
+\c@savedinstitution=\count381
+\c@lista=\count382
+\c@savedlista=\count383
+\c@listb=\count384
+\c@savedlistb=\count385
+\c@listc=\count386
+\c@savedlistc=\count387
+\c@listd=\count388
+\c@savedlistd=\count389
+\c@liste=\count390
+\c@savedliste=\count391
+\c@listf=\count392
+\c@savedlistf=\count393
+\c@location=\count394
+\c@savedlocation=\count395
+\c@organization=\count396
+\c@savedorganization=\count397
+\c@origlocation=\count398
+\c@savedoriglocation=\count399
+\c@origpublisher=\count400
+\c@savedorigpublisher=\count401
+\c@publisher=\count402
+\c@savedpublisher=\count403
+\c@language=\count404
+\c@savedlanguage=\count405
+\c@origlanguage=\count406
+\c@savedoriglanguage=\count407
+\c@pageref=\count408
+\c@savedpageref=\count409
 \shorthandwidth=\skip62
 \shortjournalwidth=\skip63
 \shortserieswidth=\skip64
@@ -657,19 +656,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.
 def
 File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
-\c@textcitecount=\count406
-\c@textcitetotal=\count407
-\c@textcitemaxnames=\count408
-\c@biburlbigbreakpenalty=\count409
-\c@biburlbreakpenalty=\count410
-\c@biburlnumpenalty=\count411
-\c@biburlucpenalty=\count412
-\c@biburllcpenalty=\count413
+\c@textcitecount=\count410
+\c@textcitetotal=\count411
+\c@textcitemaxnames=\count412
+\c@biburlbigbreakpenalty=\count413
+\c@biburlbreakpenalty=\count414
+\c@biburlnumpenalty=\count415
+\c@biburlucpenalty=\count416
+\c@biburllcpenalty=\count417
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count414
+\c@smartand=\count418
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear-comp'...
 Package biblatex Info: ... file 'authoryear-comp.bbx' found.
@@ -689,8 +688,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/stand
 ard.bbx
 File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count415
-\c@bbx:relatedtotal=\count416
+\c@bbx:relatedcount=\count419
+\c@bbx:relatedtotal=\count420
 )))
 Package biblatex Info: Trying to load citation style 'authoryear-comp'...
 Package biblatex Info: ... file 'authoryear-comp.cbx' found.
@@ -720,22 +719,23 @@ File: biblatex.cfg
 ))
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.st
 y
-Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
 \LTleft=\skip76
 \LTright=\skip77
 \LTpre=\skip78
 \LTpost=\skip79
-\LTchunksize=\count417
+\LTchunksize=\count421
 \LTcapwidth=\dimen164
-\LT@head=\box50
-\LT@firsthead=\box51
-\LT@foot=\box52
-\LT@lastfoot=\box53
-\LT@cols=\count418
-\LT@rows=\count419
-\c@LT@tables=\count420
-\c@LT@chunks=\count421
-\LT@p@ftn=\toks25
+\LT@head=\box53
+\LT@firsthead=\box54
+\LT@foot=\box55
+\LT@lastfoot=\box56
+\LT@gbox=\box57
+\LT@cols=\count422
+\LT@rows=\count423
+\c@LT@tables=\count424
+\c@LT@chunks=\count425
+\LT@p@ftn=\toks26
 )
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.
 sty
@@ -750,27 +750,27 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen172
 \cmidrulekern=\dimen173
 \defaultaddspace=\dimen174
-\@cmidla=\count422
-\@cmidlb=\count423
+\@cmidla=\count426
+\@cmidlb=\count427
 \@aboverulesep=\dimen175
 \@belowrulesep=\dimen176
-\@thisruleclass=\count424
-\@lastruleclass=\count425
+\@thisruleclass=\count428
+\@lastruleclass=\count429
 \@thisrulewidth=\dimen177
 )
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.
 sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@notes=\box54
+\fn@notes=\box58
 \fn@width=\dimen178
 )
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.
 sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
 
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.
 sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
@@ -778,11 +778,11 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: luatex.def on input line 105.
+Package graphics Info: Driver file: luatex.def on input line 107.
 
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/luate
 x.def
-File: luatex.def 2020/10/05 v1.2a Graphics/color driver for luatex
+File: luatex.def 2021/06/01 v1.2c Graphics/color driver for luatex
 ))
 \Gin@req@height=\dimen179
 \Gin@req@width=\dimen180
@@ -810,8 +810,8 @@ Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \caption@hangindent=\dimen187
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count426
-\c@continuedfloat=\count427
+\c@caption@flags=\count430
+\c@continuedfloat=\count431
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
@@ -821,7 +821,7 @@ Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )) (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bera/bera.sty
 Package: bera 2004/01/31 (WaS)
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
 2.
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
@@ -1014,10 +1014,10 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 tex
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils
 .tex
-\XKV@toks=\toks26
-\XKV@tempa@toks=\toks27
+\XKV@toks=\toks27
+\XKV@tempa@toks=\toks28
 )
-\XKV@depth=\count428
+\XKV@depth=\count432
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 LaTeX Font Info:    Trying to load font information for T1+mdbch on input line 
@@ -1044,7 +1044,7 @@ LaTeX Font Info:    Redeclaring math accent \widetilde on input line 532.
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 533.
 \rulethickness=\skip80
 ) (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ))
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome/fontaw
 esome.sty
@@ -1104,23 +1104,24 @@ rs
 \f@nch@O@olf=\skip88
 \f@nch@O@orf=\skip89
 ) (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
+Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup11
 \symboldletters=\mathgroup12
 \symboldsymbols=\mathgroup13
 \symboldlargesymbols=\mathgroup14
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
-LaTeX Info: Redefining \bm on input line 209.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.
 sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box55
+\ttl@box=\box59
 \beforetitleunit=\skip90
 \aftertitleunit=\skip91
 \ttl@plus=\dimen188
 \ttl@minus=\dimen189
-\ttl@toksa=\toks28
+\ttl@toksa=\toks29
 \titlewidth=\dimen190
 \titlewidthlast=\dimen191
 \titlewidthfirst=\dimen192
@@ -1154,15 +1155,15 @@ s.sty
 Package: mathtools 2021/04/12 v1.27 mathematical typesetting tools
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count429
-\calc@Bcount=\count430
+\calc@Acount=\count433
+\calc@Bcount=\count434
 \calc@Adimen=\dimen193
 \calc@Bdimen=\dimen194
 \calc@Askip=\skip92
 \calc@Bskip=\skip93
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count431
+\calc@Ccount=\count435
 \calc@Cskip=\skip94
 )
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mathtools/mhsetup.
@@ -1173,7 +1174,7 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count432
+\g_MT_multlinerow_int=\count436
 \l_MT_multwidth_dim=\dimen195
 \origjot=\skip95
 \l_MT_shortvdotswithinadjustabove_dim=\dimen196
@@ -1182,7 +1183,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \l_MT_below_intertext_sep=\dimen199
 \l_MT_above_shortintertext_sep=\dimen256
 \l_MT_below_shortintertext_sep=\dimen257
-\xmathstrut@box=\box56
+\xmathstrut@box=\box60
 \xmathstrut@dim=\dimen258
 )
 
@@ -1205,10 +1206,10 @@ Package lualatex-math Warning: I've expected \MT_cramped_internal:Nn to have
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eukdate/eukdate.st
 y
 Package: eukdate 2009/03/18 v1.04 UK format date (Hart's Rules) with weekday
-\c@euk@date=\count433
-\c@euk@month=\count434
-\c@euk@century=\count435
-\c@euk@year=\count436
+\c@euk@date=\count437
+\c@euk@month=\count438
+\c@euk@century=\count439
+\c@euk@year=\count440
 ) (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xpatch/xpatch.st
 y
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
@@ -1217,20 +1218,20 @@ Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
-Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
 \col@sep=\dimen259
-\ar@mcellbox=\box57
+\ar@mcellbox=\box61
 \extrarowheight=\dimen260
-\NC@list=\toks29
+\NC@list=\toks30
 \extratabsurround=\skip96
 \backup@length=\skip97
-\ar@cellbox=\box58
+\ar@cellbox=\box62
 )
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.
 sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip98
-\multirow@cntb=\count437
+\multirow@cntb=\count441
 \multirow@dima=\skip99
 \bigstrutjot=\dimen261
 )
@@ -1238,22 +1239,22 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 y
 \wrapoverhang=\dimen262
 \WF@size=\dimen263
-\c@WF@wrappedlines=\count438
-\WF@box=\box59
-\WF@everypar=\toks30
+\c@WF@wrappedlines=\count442
+\WF@box=\box63
+\WF@everypar=\toks31
 Package: wrapfig 2003/01/31  v 3.6
 ) (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count439
-\float@exts=\toks31
-\float@box=\box60
-\@float@everytoks=\toks32
-\@floatcapt=\box61
+\c@float@type=\count443
+\float@exts=\toks32
+\float@box=\box64
+\@float@everytoks=\toks33
+\@floatcapt=\box65
 )
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.
 sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
-\everycr=\toks33
+\everycr=\toks34
 \minrowclearance=\skip100
 )
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscap
@@ -1271,17 +1272,17 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.
 sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box62
-\sift@deathcycles=\count440
+\@vwid@box=\box66
+\sift@deathcycles=\count444
 \@vwid@loff=\dimen264
 \@vwid@roff=\dimen265
 )
-\c@taburow=\count441
-\tabu@nbcols=\count442
-\tabu@cnt=\count443
-\tabu@Xcol=\count444
-\tabu@alloc=\count445
-\tabu@nested=\count446
+\c@taburow=\count445
+\tabu@nbcols=\count446
+\tabu@cnt=\count447
+\tabu@Xcol=\count448
+\tabu@alloc=\count449
+\tabu@nested=\count450
 \tabu@target=\dimen266
 \tabu@spreadtarget=\dimen267
 \tabu@naturalX=\dimen268
@@ -1291,18 +1292,18 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \abovetabulinesep=\dimen272
 \belowtabulinesep=\dimen273
 \tabustrutrule=\dimen274
-\tabu@thebody=\toks34
-\tabu@footnotes=\toks35
-\tabu@box=\box63
-\tabu@arstrutbox=\box64
-\tabu@hleads=\box65
-\tabu@vleads=\box66
+\tabu@thebody=\toks35
+\tabu@footnotes=\toks36
+\tabu@box=\box67
+\tabu@arstrutbox=\box68
+\tabu@hleads=\box69
+\tabu@vleads=\box70
 \tabu@cellskip=\skip101
 )
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/thr
 eeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box67
+\@tempboxb=\box71
 )
 (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/th
 reeparttablex.sty
@@ -1318,14 +1319,14 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 \TPTL@width=\skip102
 ) (c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box68
-\UL@hyphenbox=\box69
+\UL@box=\box72
+\UL@hyphenbox=\box73
 \UL@skip=\skip103
-\UL@hook=\toks36
+\UL@hook=\toks37
 \UL@height=\dimen275
-\UL@pe=\count447
+\UL@pe=\count451
 \UL@pixel=\dimen276
-\ULC@box=\box70
+\ULC@box=\box74
 Package: ulem 2019/11/18
 \ULdepth=\dimen277
 )
@@ -1333,11 +1334,11 @@ Package: ulem 2019/11/18
 sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen278
-\c@nlinenum=\count448
-\TeXr@lab=\toks37
+\c@nlinenum=\count452
+\TeXr@lab=\toks38
 )
-\@quotelevel=\count449
-\@quotereset=\count450
+\@quotelevel=\count453
+\@quotereset=\count454
 (./report.aux)
 \openout1 = report.aux
 
@@ -1665,7 +1666,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count451
+\c@section@level=\count455
 )
 LaTeX Info: Redefining \ref on input line 303.
 LaTeX Info: Redefining \pageref on input line 303.
@@ -1723,7 +1724,7 @@ Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2021-05-11 L3 programming layer (loader) 
+(biblatex)             2021-06-01 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
@@ -1979,51 +1980,40 @@ ut line 560.
 File: report_files/figure-latex/figureE-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/figureE-1.pdf>
 Package luatex.def Info: report_files/figure-latex/figureE-1.pdf  used on input
- line 584.
+ line 586.
 (luatex.def)             Requested size: 455.24165pt x 284.52603pt.
 [9
 
-<./report_files/figure-latex/residuals-1.pdf>]
-
-LaTeX Warning: Reference `fig:figureE' on page 10 undefined on input line 586.
-
-[10<./report_files/figure-latex/figureE-1.pdf>]
-<report_files/figure-latex/Bluebox-1.pdf, id=208, 578.16pt x 361.35pt>
+<./report_files/figure-latex/residuals-1.pdf>] [10<./report_files/figure-latex/f
+igureE-1.pdf>]
+<report_files/figure-latex/Bluebox-1.pdf, id=210, 578.16pt x 361.35pt>
 File: report_files/figure-latex/Bluebox-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/Bluebox-1.pdf>
 Package luatex.def Info: report_files/figure-latex/Bluebox-1.pdf  used on input
- line 596.
+ line 602.
 (luatex.def)             Requested size: 455.24165pt x 284.52603pt.
 
-LaTeX Warning: Reference `fig:Bluebox' on page 11 undefined on input line 598.
-
-[11
-
-<./report_files/figure-latex/Bluebox-1.pdf>]
-
-LaTeX Warning: Reference `tab:Beforelawsub' on page 12 undefined on input line 
-638.
+Overfull \hbox (334.36281pt too wide) in paragraph at lines 612--631
+ [][] 
+ []
 
 
-LaTeX Warning: Reference `tab:Afterlawsub' on page 12 undefined on input line 6
-38.
+Overfull \hbox (316.82872pt too wide) in paragraph at lines 637--656
+ [][] 
+ []
 
-<report_files/figure-latex/season-1.pdf, id=218, 578.16pt x 361.35pt>
+<report_files/figure-latex/season-1.pdf, id=214, 578.16pt x 361.35pt>
 File: report_files/figure-latex/season-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/season-1.pdf>
 Package luatex.def Info: report_files/figure-latex/season-1.pdf  used on input 
-line 649.
+line 671.
 (luatex.def)             Requested size: 455.24165pt x 284.52603pt.
-[12]
+[11
 
-LaTeX Warning: Reference `fig:season' on page 13 undefined on input line 651.
-
-[13<./report_files/figure-latex/season-1.pdf>] [14] [15] (./report.aux)
+<./report_files/figure-latex/Bluebox-1.pdf>] [12<./report_files/figure-latex/sea
+son-1.pdf>] [13] [14] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 3B8364D2E97C56B0D0D8756637C1893C;2474.
@@ -2033,15 +2023,16 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33313 strings out of 478378
+ 33408 strings out of 478108
  100000,1648299 words of node,token memory allocated
- 836 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 27 kern, 1 glyph, 31 attribute, 77 glue_spe
-c, 31 attribute_list, 1 write, 2 pdf_action nodes
-   avail lists: 1:1,2:922,3:958,4:185,5:160,6:56,7:5013,8:69,9:463,10:17,11:320
- 51793 multiletter control sequences out of 65536+600000
+ 854 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 29 kern, 1 glyph, 33 attribute, 77 glue_spe
+c, 33 attribute_list, 1 write, 2 pdf_action nodes
+   avail lists: 1:1,2:1583,3:546,4:156,5:168,6:56,7:5065,8:58,9:1083,10:17,11:32
+0
+ 52180 multiletter control sequences out of 65536+600000
  232 fonts using 13880547 bytes
- 85i,14n,135p,738b,1156s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,14n,131p,738b,1238s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{
 c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/ly1/texnansi.e
 nc}<c:/Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype/public/font
@@ -2054,10 +2045,10 @@ AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/bera/fvsb8a.pfb><c:/Users/
 61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/bera/fvsr8a.pfb><c:/
 Users/61477/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/mathdesign/mdb
 ch/md-chr8t.pfb>
-Output written on report.pdf (15 pages, 7924088 bytes).
+Output written on report.pdf (14 pages, 7925400 bytes).
 
-PDF statistics: 302 PDF objects out of 1000 (max. 8388607)
- 247 compressed objects within 3 object streams
- 64 named destinations out of 1000 (max. 131072)
+PDF statistics: 311 PDF objects out of 1000 (max. 8388607)
+ 257 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 131072)
  89 words of extra memory for PDF output out of 10000 (max. 100000000)
 

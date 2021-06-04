@@ -268,14 +268,20 @@ From the figure \@ref(fig:Bluebox), it is clear that the range of monthly deaths
 Beforelawsub <-filter(Seatbelts, law ==0)
 Beforelawsub %>%
   summary() %>%
-  kable(caption="Before Law summary stats")
+  kable(caption="Before Law summary stats")%>%
+  kable_styling(bootstrap_options = c("bordered", "hover"), 
+                full_width =F,
+                position = "center")
 ```
 
 ```{r Afterlawsub, echo = FALSE, message = FALSE, warning = FALSE}
 Afterlawsub <-filter(Seatbelts, law!=0)
 Afterlawsub %>%
   summary() %>%
-  kable(caption="After Law summary stats")
+  kable(caption="After Law summary stats")%>%
+  kable_styling(bootstrap_options = c("bordered", "hover"), 
+                full_width =F,
+                position = "center")
 ```
 
 From the tables \@ref(tab:Beforelawsub) and \@ref(tab:Afterlawsub) :
